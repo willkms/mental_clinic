@@ -1,0 +1,1133 @@
+/*  CSS初期化はじめ(bodyのbackground-color以外)  */
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body{
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+nav ul {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+/*  CSS初期化終わり  */
+/* デフォルト始め　*/
+/*
+.intro-wrapper{
+  background-image:url("http://miyoshi-mental.jp/img/pict_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30vh;
+  padding-bottom: 22.5vh;
+}
+*/
+
+.intro-wrapper{
+  background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30vh;
+  padding-bottom: 22.5vh;
+}
+
+.clinic-name{
+  width: 90%;
+  height: calc(90vw / 640 * 100);
+  background-image:url("http://miyoshi-mental.jp/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.remark-wrapper{
+  width: 60%;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: white;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.remark-contents-wrapper{
+  width: 75%;
+  height: auto;
+}
+
+.remark{
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+}
+
+.date{
+  font-family: 'monospace',sans-serif;
+  font-weight:400;
+  font-size: 12px;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+}
+
+header.fixed{
+  position: fixed;
+  top: 0;
+}
+
+.page-title{
+  margin-left: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+}
+
+.TEL{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  /* margin-left: 2rem; */
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+}
+
+nav{
+  /* float: right; */
+}
+
+ul{
+  width: 65%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+li{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  float: left;
+  font-family: 'Open sans',sans-serif;
+  font-weight:700;
+  font-size: 14px;
+}
+
+.about-wrapper{
+  clear: both;
+}
+
+.section-title{
+  padding-top: 10vh;
+  font-family: 'Varela Round',sans-serif;
+  font-weight:400;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.section-title-first{
+  padding-top: calc(20vh + 1rem);
+  font-family: 'Varela Round',sans-serif;
+  font-weight:400;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.about-contents-wrapper{
+  clear: both;
+  width: auto;
+  height: auto;
+  margin-top: 5vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about-first-image{
+  width: 90vw;
+  height: 30vh;
+  background-image:url("http://miyoshi-mental.jp/img/pict_02.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-text-wrapper{
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-subtitle{
+  padding-top: 1rem;
+  font-family: 'Varela Round',sans-serif;
+  font-weight:400;
+  font-size: 24px;
+}
+
+.about-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  color: #777777;
+}
+
+.about-second-image{
+  width: 90vw;
+  height: 30vh;
+  background-image:url("http://miyoshi-mental.jp/img/pict_03.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-third-image{
+  width: 90vw;
+  height: 30vh;
+  background-image:url("http://miyoshi-mental.jp/img/pict_04.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-fourth-image{
+  width: 90vw;
+  height: 30vh;
+  background-image:url("http://miyoshi-mental.jp/img/pict_05.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-fifth-image{
+  width: 90vw;
+  height: 30vh;
+  background-image:url("http://miyoshi-mental.jp/img/pict_06.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.subject-wrapper{
+  width: auto;
+  height: auto;
+  padding-top: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.subject-title{
+  font-family: 'Varela Round',sans-serif;
+  font-weight:400;
+  font-size: 24px;
+}
+
+.subject-subtitle{
+  padding-top: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  color: #888888;
+}
+
+.subject-detail{
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  color: #888888;
+}
+
+.time-wrapper{
+  width: auto;
+  height: auto;
+  padding-top: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.time-title{
+  font-family: 'Varela Round',sans-serif;
+  font-weight:400;
+  font-size: 24px;
+}
+
+.time-table-image{
+  width: 90vw;
+  height: 10vh;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:url("http://miyoshi-mental.jp/img/timetable.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.time-subtitle{
+  padding-top: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  color: #888888;
+}
+
+.time-detail{
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  color: #888888;
+}
+
+.QandA-wrapper{
+  width: auto;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 2px solid orange;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Q{
+  padding-left: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:600;
+  font-size: 16px;
+  color: #888888;
+}
+
+.pink{
+  color: #ec7aac;
+}
+
+.A{
+  padding-left: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  color: #888888;
+}
+
+.orange{
+  color: #ee7300;
+}
+
+.access-lead-wrapper{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.building-image{
+
+}
+
+.access{
+  font-family: 'Open sans',sans-serif;
+  font-weight:600;
+  font-size: 21px;
+  color: #888888;
+}
+
+.access-remark{
+  margin-top: 2rem;
+  text-align: center;
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #888888;
+}
+
+.phone-number-wrapper{
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.phone-image{
+
+}
+
+.phone-number{
+  font-family: 'Open sans',sans-serif;
+  font-weight:600;
+  font-size: 24px;
+  color: #d43076;
+}
+
+.transportation{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #888888;
+}
+
+footer{
+  margin-top: 3rem;
+  background-color: #98DBC6;
+  overflow: hidden;
+}
+
+.copyright{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  color: white;
+}
+
+.tel-wrapper{
+  float: left;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background-color: #E6D72A;
+  overflow: hidden;
+  opacity: 0.85;
+}
+
+.tel-wrapper:hover{
+  opacity: 1.0;
+}
+
+.telephone-image{
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  background-image:url("image/telephone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tel-action{
+  float: left;
+  margin-left: 0.5rem;
+  text-decoration:none;
+  color: white;
+}
+
+/*
+.line-it-button{
+  float: right;
+  padding-top: 3rem;
+  padding-right: 2rem;
+}
+*/
+
+.mail-wrapper{
+  float: right;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  background-color: #5BC8AC;
+  overflow: hidden;
+  opacity: 0.85;
+}
+
+.mail-wrapper:hover{
+  opacity: 1.0;
+}
+
+.mail-image{
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  background-image:url("image/mail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mail-action{
+  float: left;
+  margin-left: 0.5rem;
+  text-align: center;
+  text-decoration:none;
+  color: white;
+}
+
+/* デフォルト始め　*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .clinic-name{
+    width: 50%;
+    height: calc(50vw / 640 * 100);
+    background-image:url("http://miyoshi-mental.jp/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .about-contents-wrapper{
+    clear: both;
+    width: auto;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  .about-text-wrapper{
+    float: left;
+    width: 62.4%;
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  .about-first-image{
+    float: left;
+    width: 28.4vw;
+    height: 15vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_02.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-text-wrapper{
+    width: 62.4%;
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  .about-subtitle{
+    font-family: 'Varela Round',sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .about-detail{
+    padding-top: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    color: #777777;
+  }
+
+  .about-second-image{
+    float: left;
+    width: 28.4vw;
+    height: 15vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_03.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-third-image{
+    float: left;
+    width: 28.4vw;
+    height: 15vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_04.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-fourth-image{
+    float: left;
+    width: 28.4vw;
+    height: 15vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_05.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-fifth-image{
+    float: left;
+    width: 28.4vw;
+    height: 15vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_06.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tel-wrapper{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 1em 1rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-left: 20vw;
+    background-color: #E6D72A;
+    overflow: hidden;
+  }
+
+  .telephone-image{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    background-image:url("image/telephone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tel-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-decoration:none;
+    color: white;
+  }
+
+  /*
+  .line-it-button{
+    float: right;
+    padding-top: 3rem;
+    padding-right: 2rem;
+  }
+  */
+
+  .mail-wrapper{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-right: 20vw;
+    margin-bottom: 3rem;
+    background-color: #5BC8AC;
+    overflow: hidden;
+  }
+
+  .mail-image{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    background-image:url("image/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mail-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .time-wide-wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+  }
+
+  .subject-wrapper{
+    float: left;
+    width: calc(45vw - 2rem);
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subject-title{
+    font-family: 'Varela Round',sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .subject-subtitle{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .subject-detail{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .time-wrapper{
+    float: left;
+    width: calc(45vw - 2rem);
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 2rem;
+  }
+
+  .time-title{
+    font-family: 'Varela Round',sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .time-table-image{
+    width: calc(45vw - 2rem);
+    height: 8vh;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url("http://miyoshi-mental.jp/img/timetable.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .time-subtitle{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .time-detail{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .QandA-wide-wrapper{
+    clear: both;
+  }
+
+  .QandA-wrapper{
+    float: left;
+    width: calc(45vw - 2rem);
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .Q{
+    padding-left: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:600;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .A{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .access-wrapper{
+    clear: both;
+  }
+
+  .tel-wrapper{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-left: 20vw;
+    background-color: #E6D72A;
+    overflow: hidden;
+  }
+
+  .telephone-image{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("image/telephone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tel-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+  }
+
+  /*
+  .line-it-button{
+    float: right;
+    padding-top: 3rem;
+    padding-right: 2rem;
+  }
+  */
+
+  .mail-wrapper{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-right: 20vw;
+    margin-bottom: 3rem;
+    background-color: #5BC8AC;
+    overflow: hidden;
+  }
+
+  .mail-image{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("image/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mail-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about-contents-wrapper{
+    clear: both;
+    width: auto;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  .about-text-wrapper{
+    float: left;
+    width: 62.4%;
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  .about-first-image{
+    float: left;
+    width: 28.4vw;
+    height: 29vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_02.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-text-wrapper{
+    width: 62.4%;
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  .about-subtitle{
+    font-family: 'Varela Round',sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .about-detail{
+    padding-top: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    color: #777777;
+  }
+
+  .about-second-image{
+    float: left;
+    width: 28.4vw;
+    height: 29vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_03.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-third-image{
+    float: left;
+    width: 28.4vw;
+    height: 29vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_04.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-fourth-image{
+    float: left;
+    width: 28.4vw;
+    height: 29vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_05.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-fifth-image{
+    float: left;
+    width: 28.4vw;
+    height: 29vh;
+    background-image:url("http://miyoshi-mental.jp/img/pict_06.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .time-wide-wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+  }
+
+  .subject-wrapper{
+    float: left;
+    width: calc(45vw - 2rem);
+    height: auto;
+  }
+
+  .subject-title{
+    font-family: 'Varela Round',sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .subject-subtitle{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .subject-detail{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .time-wrapper{
+    float: left;
+    width: calc(45vw - 2rem);
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  .time-title{
+    font-family: 'Varela Round',sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .time-table-image{
+    width: calc(45vw - 2rem);
+    height: 17vh;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url("http://miyoshi-mental.jp/img/timetable.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .time-subtitle{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .time-detail{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .tel-wrapper{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-left: 20vw;
+    background-color: #E6D72A;
+    overflow: hidden;
+  }
+
+  .telephone-image{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("image/telephone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tel-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+  }
+
+  /*
+  .line-it-button{
+    float: right;
+    padding-top: 3rem;
+    padding-right: 2rem;
+  }
+  */
+
+  .mail-wrapper{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-right: 20vw;
+    margin-bottom: 3rem;
+    background-color: #5BC8AC;
+    overflow: hidden;
+  }
+
+  .mail-image{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("image/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mail-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+  }
+
+}
