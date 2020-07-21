@@ -122,7 +122,7 @@ input, select {
   padding-top: 30vh;
   padding-bottom: 22.5vh;
 }
-
+/*
 .clinic-name{
   width: 90%;
   height: calc(90vw / 640 * 100);
@@ -131,6 +131,27 @@ input, select {
   background-size: contain;
   margin-left: auto;
   margin-right: auto;
+}
+*/
+
+.pigeon-image{
+  width: 100px;
+  height: 100px;
+  background-image: url("image/pigeon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.clinic-name-write{
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+  /* font-family: 'Noto Sans JP',sans-serif; */
+  font-weight:400;
+  font-size: 32px;
 }
 
 .remark-wrapper{
@@ -153,6 +174,7 @@ input, select {
 
 .remark{
   font-family: 'Open sans',sans-serif;
+  /* font-family: 'Noticia Text', serif; */
   font-weight:400;
   font-size: 16px;
 }
@@ -220,21 +242,47 @@ li{
 }
 
 .section-title{
+  position: relative;
   padding-top: 10vh;
-  font-family: 'Varela Round',sans-serif;
+  padding-bottom: 1rem;
+  /* font-family: 'Varela Round',sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight:400;
   font-size: 40px;
   color: black;
   text-align: center;
 }
 
+.section-title::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    left: 45%;
+    border-bottom: 1px solid #98DBC6;
+}
+
 .section-title-first{
+  position: relative;
   padding-top: calc(20vh + 1rem);
-  font-family: 'Varela Round',sans-serif;
+  padding-bottom: 1rem;
+  /* font-family: 'Varela Round',sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight:400;
   font-size: 40px;
   color: black;
   text-align: center;
+}
+
+.section-title-first::before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    bottom: 0;
+    left: 40%;
+    border-bottom: 1px solid #98DBC6;
 }
 
 .about-contents-wrapper{
@@ -249,37 +297,107 @@ li{
 .about-first-image{
   width: 90vw;
   height: 30vh;
-  background-image:url("http://miyoshi-mental.jp/img/pict_02.jpg");
+  background-image:url("image/hearing.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+/*
 .about-text-wrapper{
   width: 90vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
+*/
 
 .about-subtitle{
   padding-top: 1rem;
-  font-family: 'Varela Round',sans-serif;
+  /* font-family: 'Varela Round',sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight:400;
   font-size: 24px;
 }
 
-.about-detail{
+.about-first-detail{
   padding-top: 1rem;
   font-family: 'Georgia','arial',sans-serif;
   font-weight:400;
   font-size: 18px;
+  line-height: 1.5;
   color: #777777;
+}
+
+.about-second-first-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.about-second-second-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.about-second-third-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.about-second-fourth-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.about-third-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.blue-green{
+  border-left: 5px solid #2C4A52;
+  color: #2C4A52;
+  font-weight: bold;
+}
+
+.waterway{
+  border-left: 5px solid #537072;
+  color: #537072;
+  font-weight: bold;
+}
+
+.haze{
+  border-left: 5px solid #8E9B97;
+  color: #8E9B97;
+  font-weight: bold;
+}
+
+.smog{
+  color: #F4EBDB;
 }
 
 .about-second-image{
   width: 90vw;
   height: 30vh;
-  background-image:url("http://miyoshi-mental.jp/img/pict_03.jpg");
+  background-image:url("image/depressed_woman.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -364,9 +482,11 @@ li{
 
 .time-subtitle{
   padding-top: 1rem;
-  font-family: 'Open sans',sans-serif;
+  /* font-family: 'Open sans',sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight:700;
   font-size: 16px;
+  line-height: 1.5;
   color: #888888;
 }
 
@@ -374,6 +494,7 @@ li{
   font-family: 'Open sans',sans-serif;
   font-weight:400;
   font-size: 16px;
+  line-height: 1.5;
   color: #888888;
 }
 
@@ -575,6 +696,19 @@ footer{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .clinic-name-write{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Noticia Text', serif;
+    /* font-family: 'Noto Sans JP',sans-serif; */
+    font-weight:400;
+    font-size: 36px;
+  }
+
   .about-contents-wrapper{
     clear: both;
     width: auto;
@@ -583,48 +717,110 @@ footer{
     margin-left: 5%;
     overflow: hidden;
   }
-
+/*
   .about-text-wrapper{
     float: left;
     width: 62.4%;
     height: auto;
     margin-left: 2rem;
   }
-
+*/
   .about-first-image{
     float: left;
     width: 28.4vw;
     height: 15vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_02.jpg");
+    background-image:url("image/hearing.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
-
+/*
   .about-text-wrapper{
     width: 62.4%;
     height: auto;
     margin-left: 2rem;
   }
-
+*/
   .about-subtitle{
-    font-family: 'Varela Round',sans-serif;
+    /* font-family: 'Varela Round',sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight:400;
     font-size: 24px;
   }
 
-  .about-detail{
+  .about-first-detail{
+    float: right;
+    width: 55vw;
+    padding-top: 0;
+    padding-left: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-first-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-second-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-third-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-fourth-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-third-detail{
     padding-top: 1rem;
     font-family: 'Georgia','arial',sans-serif;
     font-weight:400;
     font-size: 18px;
+    line-height: 1.5;
     color: #777777;
   }
 
   .about-second-image{
-    float: left;
+    float: right;
     width: 28.4vw;
     height: 15vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_03.jpg");
+    background-image:url("image/depressed_woman.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -725,6 +921,19 @@ footer{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  .clinic-name-write{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Noticia Text', serif;
+    /* font-family: 'Noto Sans JP',sans-serif; */
+    font-weight:400;
+    font-size: 40px;
+  }
+
   .time-wide-wrapper{
     margin-left: 5%;
     margin-right: 5%;
@@ -788,9 +997,11 @@ footer{
 
   .time-subtitle{
     padding-top: 1rem;
-    font-family: 'Open sans',sans-serif;
+    /* font-family: 'Open sans',sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight:700;
     font-size: 16px;
+    line-height: 1.5;
     color: #888888;
   }
 
@@ -798,6 +1009,7 @@ footer{
     font-family: 'Open sans',sans-serif;
     font-weight:400;
     font-size: 16px;
+    line-height: 1.5;
     color: #888888;
   }
 
@@ -909,6 +1121,19 @@ footer{
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  .clinic-name-write{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Noticia Text', serif;
+    /* font-family: 'Noto Sans JP',sans-serif; */
+    font-weight:400;
+    font-size: 42px;
+  }
+
   .about-contents-wrapper{
     clear: both;
     width: auto;
@@ -917,48 +1142,110 @@ footer{
     margin-left: 5%;
     overflow: hidden;
   }
-
+/*
   .about-text-wrapper{
     float: left;
     width: 62.4%;
     height: auto;
     margin-left: 2rem;
   }
-
+*/
   .about-first-image{
     float: left;
     width: 28.4vw;
     height: 29vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_02.jpg");
+    background-image:url("image/hearing.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
-
+/*
   .about-text-wrapper{
     width: 62.4%;
     height: auto;
     margin-left: 2rem;
   }
-
+*/
   .about-subtitle{
-    font-family: 'Varela Round',sans-serif;
+    /* font-family: 'Varela Round',sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight:400;
     font-size: 24px;
   }
 
-  .about-detail{
+  .about-first-detail{
+    float: right;
+    width: 55vw;
+    padding-top: 0;
+    padding-left: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-first-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-second-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-third-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-second-fourth-detail{
+    float: left;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-right: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .about-third-detail{
     padding-top: 1rem;
     font-family: 'Georgia','arial',sans-serif;
     font-weight:400;
     font-size: 18px;
+    line-height: 1.5;
     color: #777777;
   }
 
   .about-second-image{
-    float: left;
+    float: right;
     width: 28.4vw;
     height: 29vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_03.jpg");
+    background-image:url("image/depressed_woman.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -1025,7 +1312,7 @@ footer{
 
   .time-wrapper{
     float: left;
-    width: calc(45vw - 2rem);
+    width: calc(45vw - 3rem);
     height: auto;
     margin-left: 2rem;
   }
@@ -1049,9 +1336,11 @@ footer{
 
   .time-subtitle{
     padding-top: 1rem;
-    font-family: 'Open sans',sans-serif;
+    /* font-family: 'Open sans',sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight:700;
     font-size: 16px;
+    line-height: 1.5;
     color: #888888;
   }
 
@@ -1059,6 +1348,7 @@ footer{
     font-family: 'Open sans',sans-serif;
     font-weight:400;
     font-size: 16px;
+    line-height: 1.5;
     color: #888888;
   }
 
