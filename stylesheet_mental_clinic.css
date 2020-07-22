@@ -238,6 +238,7 @@ li{
 }
 
 .about-wrapper{
+  width: auto;
   clear: both;
 }
 
@@ -309,13 +310,42 @@ li{
   margin-right: auto;
 }
 */
-
+/*
 .about-subtitle{
   padding-top: 1rem;
-  /* font-family: 'Varela Round',sans-serif; */
   font-family: 'Noto Sans JP', sans-serif;
   font-weight:400;
   font-size: 24px;
+}
+*/
+
+.about-second-subtitle{
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:400;
+  font-size: 24px;
+  color: black;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0 5px 5px 5px;
+}
+
+.about-second-subtitle::after{
+  position: absolute;
+  font-family: "Font Awesome 5 Free",sans-serif;
+  font-weight: 900;
+  content: '\f00c Check';
+  background: #2196F3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 0.25rem;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
 }
 
 .about-first-detail{
@@ -327,31 +357,184 @@ li{
   color: #777777;
 }
 
+.about-second-first-trouble{
+  position: relative;
+  width: 12em;
+  margin-top: 1rem;
+  border-radius: 30px;
+  padding: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  background-color: #2C4A52;
+  opacity: 0.7;
+}
+
+.about-second-first-trouble::before{
+  position: absolute;
+  font-family: "Font Awesome 5 free";
+  content: "\f111";
+  font-size: 15px;
+  font-weight: 900;
+  right: -40px;
+  bottom: 0;
+  color: #2C4A52;
+}
+
+.about-second-first-trouble::after{
+  font-family: "Font Awesome 5 free";
+  content: "\f111";
+  position: absolute;
+  font-size: 23px;
+  font-weight: 900;
+  right: -23px;
+  bottom: 0;
+  color: #2C4A52;
+}
+
 .about-second-first-detail{
-  padding-top: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
   font-family: 'Georgia','arial',sans-serif;
   font-weight:400;
   font-size: 18px;
   line-height: 1.5;
   color: #777777;
+  background-color: #e0edff;
+}
+
+.about-second-first-detail::before{
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: -1.75rem; /* テキストからどれくらい左か */
+  margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+
+.about-second-second-trouble{
+  position: relative;
+  width: 12em;
+  margin-top: 1rem;
+  border-radius: 30px;
+  padding: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  background-color: #537072;
+  opacity: 0.7;
+}
+
+.about-second-second-trouble::before{
+  position: absolute;
+  font-family: "Font Awesome 5 free";
+  content: "\f111";
+  font-size: 15px;
+  font-weight: 900;
+  right: -40px;
+  bottom: 0;
+  color: #537072;
+}
+
+.about-second-second-trouble::after{
+  font-family: "Font Awesome 5 free";
+  content: "\f111";
+  position: absolute;
+  font-size: 23px;
+  font-weight: 900;
+  right: -23px;
+  bottom: 0;
+  color: #537072;
 }
 
 .about-second-second-detail{
-  padding-top: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
   font-family: 'Georgia','arial',sans-serif;
   font-weight:400;
   font-size: 18px;
   line-height: 1.5;
   color: #777777;
+  background-color: #e0edff;
+}
+
+.about-second-second-detail::before{
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: -1.75rem; /* テキストからどれくらい左か */
+  margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+
+.about-second-third-trouble{
+  position: relative;
+  width: 12em;
+  margin-top: 1rem;
+  border-radius: 30px;
+  padding: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  background-color: #8E9B97;
+  opacity: 0.7;
+}
+
+.about-second-third-trouble::before{
+  position: absolute;
+  font-family: "Font Awesome 5 free";
+  content: "\f111";
+  font-size: 15px;
+  font-weight: 900;
+  right: -40px;
+  bottom: 0;
+  color: #8E9B97;
+}
+
+.about-second-third-trouble::after{
+  font-family: "Font Awesome 5 free";
+  content: "\f111";
+  position: absolute;
+  font-size: 23px;
+  font-weight: 900;
+  right: -23px;
+  bottom: 0;
+  color: #8E9B97;
 }
 
 .about-second-third-detail{
-  padding-top: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
   font-family: 'Georgia','arial',sans-serif;
   font-weight:400;
   font-size: 18px;
   line-height: 1.5;
   color: #777777;
+  background-color: #e0edff;
+}
+
+.about-second-third-detail::before{
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: -1.75rem; /* テキストからどれくらい左か */
+  margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
 }
 
 .about-second-fourth-detail{
@@ -397,6 +580,7 @@ li{
 .about-second-image{
   width: 90vw;
   height: 30vh;
+  margin-top: 1rem;
   background-image:url("image/depressed_woman.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -740,12 +924,13 @@ footer{
     margin-left: 2rem;
   }
 */
+/*
   .about-subtitle{
-    /* font-family: 'Varela Round',sans-serif; */
     font-family: 'Noto Sans JP', sans-serif;
     font-weight:400;
     font-size: 24px;
   }
+  */
 
   .about-first-detail{
     float: right;
@@ -759,6 +944,7 @@ footer{
     color: #777777;
   }
 
+  /*
   .about-second-first-detail{
     float: left;
     width: 55vw;
@@ -794,9 +980,199 @@ footer{
     line-height: 1.5;
     color: #777777;
   }
+  */
+
+  .about-second-first-trouble{
+    /* float: left; */
+    position: relative;
+    width: 13em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #2C4A52;
+    opacity: 0.7;
+  }
+
+  .about-second-first-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #2C4A52;
+  }
+
+  .about-second-first-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #2C4A52;
+  }
+
+  .about-second-first-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-first-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .about-second-second-trouble{
+    /* float: left; */
+    position: relative;
+    width: 15em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #537072;
+    opacity: 0.7;
+  }
+
+  .about-second-second-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #537072;
+  }
+
+  .about-second-second-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #537072;
+  }
+
+  .about-second-second-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-second-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .about-second-third-trouble{
+    /* float: left; */
+    position: relative;
+    width: 16em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #8E9B97;
+    opacity: 0.7;
+  }
+
+  .about-second-third-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #8E9B97;
+  }
+
+  .about-second-third-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #8E9B97;
+  }
+
+  .about-second-third-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-third-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
 
   .about-second-fourth-detail{
-    float: left;
+    /* float: left; */
     width: 55vw;
     padding-top: 1rem;
     padding-right: 5vw;
@@ -820,6 +1196,7 @@ footer{
     float: right;
     width: 28.4vw;
     height: 15vh;
+    margin-top: 1rem;
     background-image:url("image/depressed_woman.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -932,6 +1309,195 @@ footer{
     /* font-family: 'Noto Sans JP',sans-serif; */
     font-weight:400;
     font-size: 40px;
+  }
+
+  .about-second-first-trouble{
+    /* float: left; */
+    position: relative;
+    width: 13em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #2C4A52;
+    opacity: 0.7;
+  }
+
+  .about-second-first-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #2C4A52;
+  }
+
+  .about-second-first-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #2C4A52;
+  }
+
+  .about-second-first-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-first-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .about-second-second-trouble{
+    /* float: left; */
+    position: relative;
+    width: 15em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #537072;
+    opacity: 0.7;
+  }
+
+  .about-second-second-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #537072;
+  }
+
+  .about-second-second-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #537072;
+  }
+
+  .about-second-second-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-second-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .about-second-third-trouble{
+    /* float: left; */
+    position: relative;
+    width: 16em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #8E9B97;
+    opacity: 0.7;
+  }
+
+  .about-second-third-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #8E9B97;
+  }
+
+  .about-second-third-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #8E9B97;
+  }
+
+  .about-second-third-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-third-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
   }
 
   .time-wide-wrapper{
@@ -1165,12 +1731,13 @@ footer{
     margin-left: 2rem;
   }
 */
+/*
   .about-subtitle{
-    /* font-family: 'Varela Round',sans-serif; */
     font-family: 'Noto Sans JP', sans-serif;
     font-weight:400;
     font-size: 24px;
   }
+  */
 
   .about-first-detail{
     float: right;
@@ -1184,6 +1751,7 @@ footer{
     color: #777777;
   }
 
+/*
   .about-second-first-detail{
     float: left;
     width: 55vw;
@@ -1219,9 +1787,198 @@ footer{
     line-height: 1.5;
     color: #777777;
   }
+  */
+  .about-second-first-trouble{
+    /* float: left; */
+    position: relative;
+    width: 13em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #2C4A52;
+    opacity: 0.7;
+  }
+
+  .about-second-first-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #2C4A52;
+  }
+
+  .about-second-first-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #2C4A52;
+  }
+
+  .about-second-first-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-first-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .about-second-second-trouble{
+    /* float: left; */
+    position: relative;
+    width: 15em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #537072;
+    opacity: 0.7;
+  }
+
+  .about-second-second-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #537072;
+  }
+
+  .about-second-second-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #537072;
+  }
+
+  .about-second-second-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-second-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .about-second-third-trouble{
+    /* float: left; */
+    position: relative;
+    width: 16em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #8E9B97;
+    opacity: 0.7;
+  }
+
+  .about-second-third-trouble::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    font-size: 15px;
+    font-weight: 900;
+    right: -40px;
+    bottom: 0;
+    color: #8E9B97;
+  }
+
+  .about-second-third-trouble::after{
+    font-family: "Font Awesome 5 free";
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 900;
+    right: -23px;
+    bottom: 0;
+    color: #8E9B97;
+  }
+
+  .about-second-third-detail{
+    /* float: left; */
+    position: relative;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+    background-color: #e0edff;
+  }
+
+  .about-second-third-detail::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -1.75rem; /* テキストからどれくらい左か */
+    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
 
   .about-second-fourth-detail{
-    float: left;
+    /* float: left; */
     width: 55vw;
     padding-top: 1rem;
     padding-right: 5vw;
@@ -1245,6 +2002,7 @@ footer{
     float: right;
     width: 28.4vw;
     height: 29vh;
+    margin-top: 1rem;
     background-image:url("image/depressed_woman.jpg");
     background-repeat: no-repeat;
     background-size: contain;
