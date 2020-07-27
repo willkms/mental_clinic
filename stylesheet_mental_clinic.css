@@ -297,7 +297,7 @@ li{
 
 .about-first-image{
   width: 90vw;
-  height: 30vh;
+  height: calc(90vw / 640 * 427);
   background-image:url("image/hearing.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -318,6 +318,31 @@ li{
   font-size: 24px;
 }
 */
+
+.about-first-subtitle{
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:400;
+  font-size: 22px;
+  background: #d0ecff;
+  border-radius: 5px;
+}
+
+.about-first-subtitle::before{
+  position: absolute;
+  font-family: "Font Awesome 5 Free",sans-serif;
+  font-weight: 900;
+  content: '\f004';
+  /* background: #2196F3; */
+  color: pink;
+  left: calc(4em + 0.5rem);
+  top: 1rem;
+}
 
 .about-second-subtitle{
   position: relative;
@@ -348,6 +373,14 @@ li{
   letter-spacing: 0.05em;
 }
 
+.about-fifth-subtitle{
+  padding-top: 1rem;
+  /* padding-left: 5vw; */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:400;
+  font-size: 22px;
+}
+
 .about-first-detail{
   padding-top: 1rem;
   font-family: 'Georgia','arial',sans-serif;
@@ -355,6 +388,11 @@ li{
   font-size: 18px;
   line-height: 1.5;
   color: #777777;
+}
+
+.yellow-underline{
+  background: linear-gradient(transparent 70%, yellow 70%);
+  font-weight: bold;
 }
 
 .about-second-first-trouble{
@@ -579,7 +617,7 @@ li{
 
 .about-second-image{
   width: 90vw;
-  height: 30vh;
+  height: calc(90vw / 640 * 453);
   margin-top: 1rem;
   background-image:url("image/depressed_woman.jpg");
   background-repeat: no-repeat;
@@ -604,8 +642,8 @@ li{
 
 .about-fifth-image{
   width: 90vw;
-  height: 30vh;
-  background-image:url("http://miyoshi-mental.jp/img/pict_06.jpg");
+  height: calc(90vw / 640 * 427);
+  background-image:url("image/counseling_man.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -912,7 +950,7 @@ footer{
   .about-first-image{
     float: left;
     width: 28.4vw;
-    height: 15vh;
+    height: calc(28.4vw / 640 * 427);
     background-image:url("image/hearing.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -931,6 +969,46 @@ footer{
     font-size: 24px;
   }
   */
+
+  .about-first-subtitle{
+    position: relative;
+    float: right;
+    width: calc(50vw + 1rem);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: calc(5vw - 1rem);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 22px;
+    background: #d0ecff;
+    border-radius: 5px;
+  }
+
+  .about-first-subtitle::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-weight: 900;
+    content: '\f004';
+    /* background: #2196F3; */
+    color: pink;
+    left: calc(4em + 1rem);
+    top: 1rem;
+  }
+
+  .about-fifth-subtitle{
+    float: right;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
 
   .about-first-detail{
     float: right;
@@ -1184,7 +1262,10 @@ footer{
   }
 
   .about-third-detail{
+    float: right;
+    width: 55vw;
     padding-top: 1rem;
+    margin-left: 5vw;
     font-family: 'Georgia','arial',sans-serif;
     font-weight:400;
     font-size: 18px;
@@ -1195,7 +1276,7 @@ footer{
   .about-second-image{
     float: right;
     width: 28.4vw;
-    height: 15vh;
+    height: calc(28.4vw / 640 * 453);
     margin-top: 1rem;
     background-image:url("image/depressed_woman.jpg");
     background-repeat: no-repeat;
@@ -1223,8 +1304,8 @@ footer{
   .about-fifth-image{
     float: left;
     width: 28.4vw;
-    height: 15vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_06.jpg");
+    height: calc(28.4vw / 640 * 427);
+    background-image:url("image/counseling_man.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -1719,7 +1800,7 @@ footer{
   .about-first-image{
     float: left;
     width: 28.4vw;
-    height: 29vh;
+    height: calc(28.4vw / 640 * 427);
     background-image:url("image/hearing.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -1738,6 +1819,47 @@ footer{
     font-size: 24px;
   }
   */
+
+  .about-first-subtitle{
+    position: relative;
+    float: right;
+    width: 52.5vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 2.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 24px;
+    background: #d0ecff;
+    border-radius: 5px;
+  }
+
+  .about-first-subtitle::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-weight: 900;
+    content: '\f004';
+    /* background: #2196F3; */
+    color: pink;
+    left: calc(4em + 1rem);
+    top: 1rem;
+  }
+
+  .about-fifth-subtitle{
+    float: right;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 2.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
 
   .about-first-detail{
     float: right;
@@ -1990,7 +2112,11 @@ footer{
   }
 
   .about-third-detail{
+    float: right;
+    width: 55vw;
     padding-top: 1rem;
+    margin-left: 0;
+    margin-right: 2.5vw;
     font-family: 'Georgia','arial',sans-serif;
     font-weight:400;
     font-size: 18px;
@@ -2001,7 +2127,7 @@ footer{
   .about-second-image{
     float: right;
     width: 28.4vw;
-    height: 29vh;
+    height: calc(28.4vw / 640 * 453);
     margin-top: 1rem;
     background-image:url("image/depressed_woman.jpg");
     background-repeat: no-repeat;
@@ -2029,8 +2155,8 @@ footer{
   .about-fifth-image{
     float: left;
     width: 28.4vw;
-    height: 29vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_06.jpg");
+    height: calc(28.4vw / 640 * 427);
+    background-image:url("image/counseling_man.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
