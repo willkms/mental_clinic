@@ -926,6 +926,48 @@ footer{
   color: white;
 }
 
+.about-second-sickness-wide-wrapper{
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #E1E3E4;
+}
+
+.about-second-sickness-narrow-wrapper{
+  width: 35%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 1rem 0.5rem 1rem 1.5rem;
+  background-color: #83BAD6;
+  /* text-align: center; */
+}
+
+.about-second-sickness{
+  position: relative;
+  color: white;
+  font-size: 11px;
+}
+
+.about-second-sickness::before{
+  position: absolute;
+  font-family: "Font Awesome 5 Free",sans-serif;
+  font-weight: 900;
+  content: '\f00c';
+  color: #fff;
+  left: -1rem;
+  bottom: 35%;
+  /* padding: 0.25rem; */
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
 /* デフォルト始め　*/
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1409,6 +1451,49 @@ footer{
     text-decoration:none;
     color: white;
   }
+
+  .about-second-sickness-wide-wrapper{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #E1E3E4;
+  }
+
+  .about-second-sickness-narrow-wrapper{
+    width: 25%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    background-color: #83BAD6;
+    /* text-align: center; */
+  }
+
+  .about-second-sickness{
+    position: relative;
+    color: white;
+    font-size: 16px;
+  }
+
+  .about-second-sickness::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-weight: 900;
+    content: '\f00c';
+    color: #fff;
+    left: -1rem;
+    bottom: 35%;
+    /* padding: 0.25rem; */
+    font-size: 0.7em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1822,6 +1907,48 @@ footer{
     color: white;
     font-size: 20px;
   }
+
+  .about-second-sickness-wide-wrapper{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #E1E3E4;
+  }
+
+  .about-second-sickness-narrow-wrapper{
+    width: 22.5%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    background-color: #83BAD6;
+    /* text-align: center; */
+  }
+
+  .about-second-sickness{
+    position: relative;
+    color: white;
+  }
+
+  .about-second-sickness::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-weight: 900;
+    content: '\f00c';
+    color: #fff;
+    left: -1rem;
+    bottom: 35%;
+    /* padding: 0.25rem; */
+    font-size: 0.7em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -2385,6 +2512,47 @@ footer{
     text-decoration:none;
     color: white;
     font-size: 18px;
+  }
+
+  .about-second-sickness-wide-wrapper{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #E1E3E4;
+  }
+
+  .about-second-sickness-narrow-wrapper{
+    width: 22.5%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    background-color: #83BAD6;
+    /* text-align: center; */
+  }
+
+  .about-second-sickness{
+    position: relative;
+    color: white;
+  }
+
+  .about-second-sickness::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-weight: 900;
+    content: '\f00c';
+    color: #fff;
+    left: -1rem;
+    bottom: 35%;
+    /* padding: 0.25rem; */
+    font-size: 0.7em;
+    line-height: 1;
+    letter-spacing: 0.05em;
   }
 
 }
