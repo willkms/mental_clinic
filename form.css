@@ -1,0 +1,1107 @@
+/*  CSS初期化はじめ  */
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+
+/*デフォルト始め*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body{
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+nav ul {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+/*  CSS初期化終わり  */
+
+.form-title{
+  width: 90%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+  font-weight:400;
+  font-size: 32px;
+}
+
+.form-table{
+  table-layout: fixed;
+  width: calc(100vw - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/*
+tbody{
+  width: calc(100vw - 2rem);
+} */
+
+tr{
+  border: 2px solid #CCCCCC;
+  /* border: 2px solid #5BC8AC; */
+}
+
+.form-subtitle{
+  /* width: 40vw; */
+  width: 9rem;
+  padding-top: 7.5vh;
+  padding-bottom: 7.5vh;
+  padding-left: 0.5rem;
+  background-color: #F6F6F6;
+  /* background-color: #98DBC6; */
+  text-align: left;
+}
+
+.red{
+  display: block;
+  color: red;
+}
+
+input{
+  margin-left: 0.5rem;
+  padding: 0;
+  /* box-shadow: 2px 2px 2px 0; */
+}
+
+.last-name, .last-name-kana{
+  width: calc(100% - 2rem);
+  margin-top: -1rem;
+}
+
+.first-name, .first-name-kana, .mail-address, .TEL{
+  width: calc(100% - 2rem);
+}
+
+.age{
+  width: 3rem;
+}
+
+textarea{
+  width: calc(100% - 2rem);
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+  vertical-align: top;
+  resize: none;
+  font-family: 'Courier New','MS Gothic';
+}
+
+.send-submit-wrapper{
+  width: 40vw;
+  height: 10vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.send-submit{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 14px;
+  background-color: #3296ff;
+  color: white;
+}
+
+.submit-wrapper{
+  float: left;
+  width: 40vw;
+  height: 10vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: calc((20vw - 1rem) / 2);
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.submit{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 14px;
+  background-color: #3296ff;
+  color: white;
+}
+
+.submit:hover{
+  background-color: #0179D5;
+}
+
+td{
+  vertical-align: middle;
+}
+
+.textarea-cell{
+  vertical-align: top;
+}
+
+.input-contents{
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+.p-last-name, .p-last-name-kana{
+  margin-left: 0.5rem;
+}
+
+.p-first-name, .p-first-name-kana{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.p-mail-address{
+  word-wrap: break-word;
+  margin-left: 0.5rem;
+}
+
+.p-TEL{
+  margin-left: 0.5rem;
+}
+
+.p-trouble{
+  white-space: pre-wrap;
+  margin-left: 0.5rem;
+}
+
+.back{
+  float: left;
+  width: 40vw;
+  height: 10vh;
+  padding: 0;
+  border: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: calc((20vw - 1rem) / 2);
+  font-size: 18px;
+  background-color: #3296ff;
+  color: white;
+}
+
+.back-to-mental{
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 2rem 0;
+  border: 0;
+  margin: 0;
+  font-size: 18px;
+  background-color: #3296ff;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+/* カレンダー始め */
+.date{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  pointer-events: none;
+}
+
+.calendar{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prev-month{
+  display: block;
+  width: auto;
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: white;
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.calendar-title{
+  padding: 0.25rem 0;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 12px;
+}
+
+.after-month{
+  display: block;
+  width: auto;
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: white;
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.holiday-header{
+  width: auto;
+  padding: 0.25rem 0;
+  border: 1px solid black;
+  background-color: #FFDDDD;
+  color: #FF0000;
+  font-size: 12px;
+}
+
+.weekday-header{
+  width: auto;
+  padding: 0.25rem 0;
+  border: 1px solid black;
+  background-color: #ECECEC;
+  font-size: 12px;
+}
+
+.saturday-header{
+  width: auto;
+  padding: 0.25rem 0;
+  border: 1px solid black;
+  background-color: #E9F4FE;
+  color: #5FADE8;
+  font-size: 12px;
+}
+
+.not-this-month{
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: white;
+  color: gray;
+  font-size: 12px;
+}
+
+.holiday{
+  width: auto;
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: #FFDDDD;
+  color: #FF0000;
+  font-size: 12px;
+}
+
+.holiday:hover{
+  background-color: yellow;
+}
+
+.weekday{
+  width: auto;
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: #ECECEC;
+  font-size: 12px;
+}
+
+.weekday:hover{
+  background-color: yellow;
+}
+
+.saturday{
+  width: auto;
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: #E9F4FE;
+  color: #5FADE8;
+  font-size: 12px;
+}
+
+.saturday:hover{
+  background-color: yellow;
+}
+
+.selected{
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.disabled{
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: gray;
+  font-size: 12px;
+}
+/* カレンダー終わり */
+
+/*デフォルト終わり*/
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+  .form-table{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-subtitle{
+    width: calc(30vw - 2rem);
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+    padding-left: 1rem;
+    background-color: #F6F6F6;
+    text-align: left;
+  }
+
+  .red{
+    display: inline;
+    margin-left: 2rem;
+  }
+
+  .last-name, .last-name-kana{
+    width: 30%;
+    margin-top: 0;
+  }
+
+  .first-name, .first-name-kana, .TEL{
+    width: 30%;
+  }
+
+  .mail-address{
+    width: 65%;
+  }
+
+  .age{
+    width: 3rem;
+  }
+
+  textarea{
+    width: 65%;
+    margin-left: 1rem;
+    resize: none;
+    vertical-align: top;
+  }
+
+  .send-submit-wrapper{
+    width: 30vw;
+    height: 10vh;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .send-submit{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin-left: 0;
+    font-size: 18px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .submit-wrapper{
+    float: left;
+    width: 30vw;
+    height: 10vh;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: calc((40vw - 2rem) / 2);
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .submit{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 18px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .back{
+    float: left;
+    width: 30vw;
+    height: 10vh;
+    padding: 0;
+    border: 0;
+    margin-top: 2rem;
+    margin-left: calc((40vw - 2rem) / 2);
+    font-size: 18px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .back-to-mental{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 2rem 0;
+    border: 0;
+    margin: 0;
+    font-size: 18px;
+    background-color: #3296ff;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+
+  /* カレンダーはじめ */
+  .date{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .calendar{
+    margin-left: 1rem;
+  }
+
+  .prev-month{
+    display: block;
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .calendar-title{
+    padding: 0.5rem 0;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .after-month{
+    display: block;
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .holiday-header{
+    width: auto;
+    padding: 0.5rem 0;
+    border: 1px solid black;
+    background-color: #FFDDDD;
+    color: #FF0000;
+    font-size: 16px;
+  }
+
+  .weekday-header{
+    width: auto;
+    padding: 0.5rem 0;
+    border: 1px solid black;
+    background-color: #ECECEC;
+    font-size: 16px;
+  }
+
+  .saturday-header{
+    width: auto;
+    padding: 0.5rem 0;
+    border: 1px solid black;
+    background-color: #E9F4FE;
+    color: #5FADE8;
+    font-size: 16px;
+  }
+
+  .not-this-month{
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: white;
+    color: gray;
+    font-size: 16px;
+  }
+
+  .holiday{
+    width: auto;
+    padding: 0.25rem;
+    border: 1px solid black;
+    background-color: #FFDDDD;
+    color: #FF0000;
+    font-size: 16px;
+  }
+
+  .holiday:hover{
+    background-color: yellow;
+  }
+
+  .weekday{
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #ECECEC;
+    font-size: 16px;
+  }
+
+  .weekday:hover{
+    background-color: yellow;
+  }
+
+  .saturday{
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #E9F4FE;
+    color: #5FADE8;
+    font-size: 16px;
+  }
+
+  .saturday:hover{
+    background-color: yellow;
+  }
+
+  .selected{
+    background-color: yellow;
+    border: 2px solid black;
+  }
+
+  .disabled{
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: gray;
+    font-size: 16px;
+  }
+  /* カレンダー終わり */
+}
+
+@media (min-width: 992px) {
+  .form-table{
+    width: 70vw;
+  }
+
+  .form-subtitle{
+    width: 20vw;
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+    padding-left: 1rem;
+    background-color: #F6F6F6;
+    text-align: left;
+  }
+
+  .last-name, .last-name-kana{
+    width: 25%;
+    margin-top: 0;
+  }
+
+  .first-name, .first-name-kana, .TEL{
+    width: 25%;
+  }
+
+  .mail-address{
+    width: 55%;
+  }
+
+  .age{
+    width: 3rem;
+  }
+
+  textarea{
+    width: 65%;
+    margin-left: 1rem;
+    resize: none;
+    vertical-align: top;
+  }
+
+  .send-submit-wrapper{
+    width: 30vw;
+    height: 7.5vh;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .send-submit{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin-left: 0;
+    font-size: 24px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .submit-wrapper{
+    float: left;
+    width: 30vw;
+    height: 7.5vh;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: calc((40vw - 2rem) / 2);
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .submit{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 24px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .back{
+    float: left;
+    width: 30vw;
+    height: 7.5vh;
+    padding: 0;
+    border: 0;
+    margin-top: 2rem;
+    margin-left: calc((40vw - 2rem) / 2);
+    font-size: 24px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .back-to-mental{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 2rem 0;
+    border: 0;
+    margin: 0;
+    font-size: 24px;
+    background-color: #3296ff;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+
+  /* カレンダーはじめ */
+  .date{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .calendar{
+    margin-left: 1rem;
+  }
+
+  .prev-month{
+    display: block;
+    width: auto;
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .calendar-title{
+    padding: 0.75rem 0;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .after-month{
+    display: block;
+    width: auto;
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .holiday-header{
+    width: auto;
+    padding: 0.75rem 0;
+    border: 1px solid black;
+    background-color: #FFDDDD;
+    color: #FF0000;
+    font-size: 16px;
+  }
+
+  .weekday-header{
+    width: auto;
+    padding: 0.75rem 0;
+    border: 1px solid black;
+    background-color: #ECECEC;
+    font-size: 16px;
+  }
+
+  .saturday-header{
+    width: auto;
+    padding: 0.75rem 0;
+    border: 1px solid black;
+    background-color: #E9F4FE;
+    color: #5FADE8;
+    font-size: 16px;
+  }
+
+  .not-this-month{
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: white;
+    color: gray;
+    font-size: 16px;
+  }
+
+  .holiday{
+    width: auto;
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: #FFDDDD;
+    color: #FF0000;
+    font-size: 16px;
+  }
+
+  .holiday:hover{
+    background-color: yellow;
+  }
+
+  .weekday{
+    width: auto;
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: #ECECEC;
+    font-size: 16px;
+  }
+
+  .weekday:hover{
+    background-color: yellow;
+  }
+
+  .saturday{
+    width: auto;
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: #E9F4FE;
+    color: #5FADE8;
+    font-size: 16px;
+  }
+
+  .saturday:hover{
+    background-color: yellow;
+  }
+
+  .selected{
+    background-color: yellow;
+    border: 2px solid black;
+  }
+
+  .disabled{
+    padding: 0.75rem;
+    border: 1px solid black;
+    background-color: gray;
+    font-size: 16px;
+  }
+  /* カレンダー終わり */
+}
+
+@media (min-width: 1200px) {
+  .form-subtitle{
+    width: 20vw;
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+    padding-left: 1rem;
+    background-color: #F6F6F6;
+    text-align: left;
+  }
+
+  textarea{
+    width: 65%;
+    margin-left: 1rem;
+    resize: none;
+    vertical-align: top;
+  }
+
+  .send-submit-wrapper{
+    width: 20vw;
+    height: 7.5vh;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .send-submit{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin-left: 0;
+    font-size: 20px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .submit-wrapper{
+    float: left;
+    width: 20vw;
+    height: 7.5vh;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: calc((58vw - 2rem) / 2);
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .submit{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 20px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .back{
+    float: left;
+    width: 20vw;
+    height: 7.5vh;
+    padding: 0;
+    border: 0;
+    margin-top: 2rem;
+    margin-left: calc((58vw - 2rem) / 2);
+    font-size: 20px;
+    background-color: #3296ff;
+    color: white;
+  }
+
+  .back-to-mental{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 2rem 0;
+    border: 0;
+    margin: 0;
+    font-size: 20px;
+    background-color: #3296ff;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+
+  /* カレンダーはじめ */
+  .date{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .calendar{
+    margin-left: 1rem;
+  }
+
+  .prev-month{
+    display: block;
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .calendar-title{
+    padding: 1rem 0;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .after-month{
+    display: block;
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .holiday-header{
+    width: auto;
+    padding: 1rem 0;
+    border: 1px solid black;
+    background-color: #FFDDDD;
+    color: #FF0000;
+    font-size: 16px;
+  }
+
+  .weekday-header{
+    width: auto;
+    padding: 1rem 0;
+    border: 1px solid black;
+    background-color: #ECECEC;
+    font-size: 16px;
+  }
+
+  .saturday-header{
+    width: auto;
+    padding: 1rem 0;
+    border: 1px solid black;
+    background-color: #E9F4FE;
+    color: #5FADE8;
+    font-size: 16px;
+  }
+
+  .not-this-month{
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    color: gray;
+    font-size: 16px;
+  }
+
+  .holiday{
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #FFDDDD;
+    color: #FF0000;
+    font-size: 16px;
+  }
+
+  .holiday:hover{
+    background-color: yellow;
+  }
+
+  .weekday{
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #ECECEC;
+    font-size: 16px;
+  }
+
+  .weekday:hover{
+    background-color: yellow;
+  }
+
+  .saturday{
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #E9F4FE;
+    color: #5FADE8;
+    font-size: 16px;
+  }
+
+  .saturday:hover{
+    background-color: yellow;
+  }
+
+  .selected{
+    background-color: yellow;
+    border: 2px solid black;
+  }
+
+  .disabled{
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: gray;
+    font-size: 16px;
+  }
+  /* カレンダー終わり */
+
+}

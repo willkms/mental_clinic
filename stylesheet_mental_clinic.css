@@ -105,15 +105,6 @@ input, select {
 
 /*  CSS初期化終わり  */
 /* デフォルト始め　*/
-/*
-.intro-wrapper{
-  background-image:url("http://miyoshi-mental.jp/img/pict_01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 30vh;
-  padding-bottom: 22.5vh;
-}
-*/
 
 .intro-wrapper{
   background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
@@ -121,25 +112,6 @@ input, select {
   background-size: cover;
   padding-top: 30vh;
   padding-bottom: 22.5vh;
-}
-/*
-.clinic-name{
-  width: 90%;
-  height: calc(90vw / 640 * 100);
-  background-image:url("http://miyoshi-mental.jp/img/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
-
-.pigeon-image{
-  width: 100px;
-  height: 100px;
-  background-image: url("image/pigeon.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .clinic-name-write{
@@ -167,11 +139,6 @@ input, select {
   text-align: center;
 }
 
-.remark-contents-wrapper{
-  width: 75%;
-  height: auto;
-}
-
 .remark{
   font-family: 'Open sans',sans-serif;
   /* font-family: 'Noticia Text', serif; */
@@ -185,90 +152,15 @@ input, select {
   font-size: 12px;
 }
 
-header{
-  width: 100%;
-  height: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  position: absolute;
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
-}
-
-header.fixed{
-  position: fixed;
-  top: 0;
-}
-
-.page-title{
-  margin-left: 1rem;
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-}
-
-.TEL{
-  margin-top: 1rem;
-  margin-left: 1rem;
-  /* margin-left: 2rem; */
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-}
-
-nav{
-  /* float: right; */
-}
-
-ul{
-  width: 65%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
-
-li{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 2rem;
-  float: left;
-  font-family: 'Open sans',sans-serif;
-  font-weight:700;
-  font-size: 14px;
-}
-
 .about-wrapper{
   width: auto;
   clear: both;
-}
-
-.section-title{
-  position: relative;
-  padding-top: 10vh;
-  padding-bottom: 1rem;
-  /* font-family: 'Varela Round',sans-serif; */
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:400;
-  font-size: 40px;
-  color: black;
-  text-align: center;
-}
-
-.section-title::before{
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 1px;
-    bottom: 0;
-    left: 45%;
-    border-bottom: 1px solid #98DBC6;
 }
 
 .section-title-first{
   position: relative;
   padding-top: calc(20vh + 1rem);
   padding-bottom: 1rem;
-  /* font-family: 'Varela Round',sans-serif; */
   font-family: 'Noto Sans JP', sans-serif;
   font-weight:400;
   font-size: 40px;
@@ -302,22 +194,6 @@ li{
   background-repeat: no-repeat;
   background-size: contain;
 }
-/*
-.about-text-wrapper{
-  width: 90vw;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
-/*
-.about-subtitle{
-  padding-top: 1rem;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:400;
-  font-size: 24px;
-}
-*/
 
 .about-first-subtitle{
   position: relative;
@@ -333,12 +209,25 @@ li{
   border-radius: 5px;
 }
 
+.about-first-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.yellow-underline{
+  background: linear-gradient(transparent 70%, yellow 70%);
+  font-weight: bold;
+}
+
 .about-first-subtitle::before{
   position: absolute;
   font-family: "Font Awesome 5 Free",sans-serif;
   font-weight: 900;
   content: '\f004';
-  /* background: #2196F3; */
   color: pink;
   left: calc(4em + 0.5rem);
   top: 1rem;
@@ -371,559 +260,6 @@ li{
   font-size: 0.7em;
   line-height: 1;
   letter-spacing: 0.05em;
-}
-
-.about-fifth-subtitle{
-  padding-top: 1rem;
-  /* padding-left: 5vw; */
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:400;
-  font-size: 22px;
-}
-
-.about-first-detail{
-  padding-top: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #777777;
-}
-
-.yellow-underline{
-  background: linear-gradient(transparent 70%, yellow 70%);
-  font-weight: bold;
-}
-
-.about-second-first-trouble{
-  position: relative;
-  width: 12em;
-  margin-top: 1rem;
-  border-radius: 30px;
-  padding: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: white;
-  background-color: #2C4A52;
-  opacity: 0.7;
-}
-
-.about-second-first-trouble::before{
-  position: absolute;
-  font-family: "Font Awesome 5 free";
-  content: "\f111";
-  font-size: 15px;
-  font-weight: 900;
-  right: -40px;
-  bottom: 0;
-  color: #2C4A52;
-}
-
-.about-second-first-trouble::after{
-  font-family: "Font Awesome 5 free";
-  content: "\f111";
-  position: absolute;
-  font-size: 23px;
-  font-weight: 900;
-  right: -23px;
-  bottom: 0;
-  color: #2C4A52;
-}
-
-.about-second-first-detail{
-  position: relative;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  padding: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #777777;
-  background-color: #e0edff;
-}
-
-.about-second-first-detail::before{
-  content: "";
-  position: absolute;
-  top: 80%;
-  left: -1.75rem; /* テキストからどれくらい左か */
-  margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-  border: 15px solid transparent;
-  border-right: 15px solid #e0edff;
-}
-
-.about-second-second-trouble{
-  position: relative;
-  width: 12em;
-  margin-top: 1rem;
-  border-radius: 30px;
-  padding: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: white;
-  background-color: #537072;
-  opacity: 0.7;
-}
-
-.about-second-second-trouble::before{
-  position: absolute;
-  font-family: "Font Awesome 5 free";
-  content: "\f111";
-  font-size: 15px;
-  font-weight: 900;
-  right: -40px;
-  bottom: 0;
-  color: #537072;
-}
-
-.about-second-second-trouble::after{
-  font-family: "Font Awesome 5 free";
-  content: "\f111";
-  position: absolute;
-  font-size: 23px;
-  font-weight: 900;
-  right: -23px;
-  bottom: 0;
-  color: #537072;
-}
-
-.about-second-second-detail{
-  position: relative;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  padding: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #777777;
-  background-color: #e0edff;
-}
-
-.about-second-second-detail::before{
-  content: "";
-  position: absolute;
-  top: 80%;
-  left: -1.75rem; /* テキストからどれくらい左か */
-  margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-  border: 15px solid transparent;
-  border-right: 15px solid #e0edff;
-}
-
-.about-second-third-trouble{
-  position: relative;
-  width: 12em;
-  margin-top: 1rem;
-  border-radius: 30px;
-  padding: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: white;
-  background-color: #8E9B97;
-  opacity: 0.7;
-}
-
-.about-second-third-trouble::before{
-  position: absolute;
-  font-family: "Font Awesome 5 free";
-  content: "\f111";
-  font-size: 15px;
-  font-weight: 900;
-  right: -40px;
-  bottom: 0;
-  color: #8E9B97;
-}
-
-.about-second-third-trouble::after{
-  font-family: "Font Awesome 5 free";
-  content: "\f111";
-  position: absolute;
-  font-size: 23px;
-  font-weight: 900;
-  right: -23px;
-  bottom: 0;
-  color: #8E9B97;
-}
-
-.about-second-third-detail{
-  position: relative;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  padding: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #777777;
-  background-color: #e0edff;
-}
-
-.about-second-third-detail::before{
-  content: "";
-  position: absolute;
-  top: 80%;
-  left: -1.75rem; /* テキストからどれくらい左か */
-  margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-  border: 15px solid transparent;
-  border-right: 15px solid #e0edff;
-}
-
-.about-second-fourth-detail{
-  padding-top: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #777777;
-}
-
-.about-third-detail{
-  padding-top: 1rem;
-  font-family: 'Georgia','arial',sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #777777;
-}
-
-.blue-green{
-  border-left: 5px solid #2C4A52;
-  color: #2C4A52;
-  font-weight: bold;
-}
-
-.waterway{
-  border-left: 5px solid #537072;
-  color: #537072;
-  font-weight: bold;
-}
-
-.haze{
-  border-left: 5px solid #8E9B97;
-  color: #8E9B97;
-  font-weight: bold;
-}
-
-.smog{
-  color: #F4EBDB;
-}
-
-.about-second-image{
-  width: 90vw;
-  height: calc(90vw / 640 * 453);
-  margin-top: 1rem;
-  background-image:url("image/depressed_woman.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.about-third-image{
-  width: 90vw;
-  height: 30vh;
-  background-image:url("http://miyoshi-mental.jp/img/pict_04.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.about-fourth-image{
-  width: 90vw;
-  height: 30vh;
-  background-image:url("http://miyoshi-mental.jp/img/pict_05.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.about-fifth-image{
-  width: 90vw;
-  height: calc(90vw / 640 * 427);
-  background-image:url("image/counseling_man.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.subject-wrapper{
-  width: auto;
-  height: auto;
-  padding-top: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.subject-title{
-  font-family: 'Varela Round',sans-serif;
-  font-weight:400;
-  font-size: 24px;
-}
-
-.subject-subtitle{
-  padding-top: 1rem;
-  font-family: 'Open sans',sans-serif;
-  font-weight:700;
-  font-size: 16px;
-  color: #888888;
-}
-
-.subject-detail{
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-  color: #888888;
-}
-
-.time-wide-wrapper{
-  padding-bottom: 10rem;
-  margin-left: 5%;
-  margin-right: 5%;
-  overflow: hidden;
-}
-
-.time-wrapper-first{
-  width: auto;
-  height: auto;
-  /* padding-top: 2rem; */
-  padding-left: 5%;
-  padding-right: 5%;
-  border-top: 2px dotted #98DBC6;
-  border-bottom: 2px dotted #98DBC6;
-  margin-top: 2rem;
-}
-
-.time-wrapper{
-  width: auto;
-  height: auto;
-  /* padding-top: 2rem; */
-  padding-left: 5%;
-  padding-right: 5%;
-  /* border-top: 2px dotted #98DBC6; */
-  border-bottom: 2px dotted #98DBC6;
-  /* margin-top: 2rem; */
-}
-
-.time-title{
-  font-family: 'Varela Round',sans-serif;
-  font-weight:400;
-  font-size: 24px;
-}
-
-.time-table-image{
-  width: 90vw;
-  height: 10vh;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-image:url("http://miyoshi-mental.jp/img/timetable.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.time-subtitle{
-  padding-top: 1rem;
-  /* font-family: 'Open sans',sans-serif; */
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #888888;
-}
-
-.time-detail{
-  padding-bottom: 1rem;
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #888888;
-}
-
-.QandA-wrapper{
-  width: auto;
-  height: auto;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border: 2px solid orange;
-  border-radius: 10px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.Q{
-  padding-left: 1rem;
-  font-family: 'Open sans',sans-serif;
-  font-weight:600;
-  font-size: 16px;
-  color: #888888;
-}
-
-.pink{
-  color: #ec7aac;
-}
-
-.A{
-  padding-left: 1rem;
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-  color: #888888;
-}
-
-.orange{
-  color: #ee7300;
-}
-
-.access-lead-wrapper{
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.building-image{
-
-}
-
-.access{
-  font-family: 'Open sans',sans-serif;
-  font-weight:600;
-  font-size: 21px;
-  color: #888888;
-}
-
-.access-remark{
-  margin-top: 2rem;
-  text-align: center;
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #888888;
-}
-
-.phone-number-wrapper{
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.phone-image{
-
-}
-
-.phone-number{
-  font-family: 'Open sans',sans-serif;
-  font-weight:600;
-  font-size: 24px;
-  color: #d43076;
-}
-
-.transportation{
-  margin-top: 1rem;
-  text-align: center;
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #888888;
-}
-
-footer{
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  /* margin-top: 3rem; */
-  background-color: #98DBC6;
-  overflow: hidden;
-}
-
-.copyright{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
-  font-family: 'Open sans',sans-serif;
-  font-weight:400;
-  font-size: 16px;
-  color: white;
-}
-
-.tel-wrapper{
-  float: left;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 0.5rem;
-  border-radius: 5px;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  background-color: #E6D72A;
-  overflow: hidden;
-  opacity: 0.85;
-}
-
-.tel-wrapper:hover{
-  opacity: 1.0;
-}
-
-.telephone-image{
-  float: left;
-  width: 1rem;
-  height: 1rem;
-  background-image:url("image/telephone.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.tel-action{
-  float: left;
-  margin-left: 0.5rem;
-  text-decoration:none;
-  color: white;
-}
-
-/*
-.line-it-button{
-  float: right;
-  padding-top: 3rem;
-  padding-right: 2rem;
-}
-*/
-
-.mail-wrapper{
-  float: right;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 0.5rem;
-  border-radius: 5px;
-  margin-top: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  background-color: #5BC8AC;
-  overflow: hidden;
-  opacity: 0.85;
-}
-
-.mail-wrapper:hover{
-  opacity: 1.0;
-}
-
-.mail-image{
-  float: left;
-  width: 1rem;
-  height: 1rem;
-  background-image:url("image/mail.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.mail-action{
-  float: left;
-  margin-left: 0.5rem;
-  text-align: center;
-  text-decoration:none;
-  color: white;
 }
 
 .about-second-sickness-wide-wrapper{
@@ -968,20 +304,149 @@ footer{
   letter-spacing: 0.05em;
 }
 
-/* デフォルト始め　*/
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .clinic-name{
-    width: 50%;
-    height: calc(50vw / 640 * 100);
-    background-image:url("http://miyoshi-mental.jp/img/logo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.about-third-image{
+  width: 90vw;
+  height: calc(90vw / 640 * 427);
+  background-image:url("image/counseling_man.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+.about-third-subtitle{
+  padding-top: 1rem;
+  /* padding-left: 5vw; */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:400;
+  font-size: 22px;
+}
+
+.about-third-detail{
+  padding-top: 1rem;
+  font-family: 'Georgia','arial',sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.time-wide-wrapper{
+  padding-bottom: 10rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+}
+
+.section-title{
+  position: relative;
+  padding-top: 10vh;
+  padding-bottom: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:400;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    left: 45%;
+    border-bottom: 1px solid #98DBC6;
+}
+
+.time-wrapper-first{
+  width: auto;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-top: 2px dotted #98DBC6;
+  border-bottom: 2px dotted #98DBC6;
+  margin-top: 2rem;
+}
+
+.time-subtitle{
+  padding-top: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+}
+
+.time-detail{
+  padding-bottom: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+}
+
+.time-wrapper{
+  width: auto;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 2px dotted #98DBC6;
+}
+
+footer{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #98DBC6;
+  overflow: hidden;
+}
+
+.line-wrapper{
+  float: left;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.line-link{
+  height: 32px;
+}
+
+.mail-wrapper{
+  float: right;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: #5BC8AC;
+  overflow: hidden;
+  opacity: 0.85;
+}
+
+.mail-wrapper:hover{
+  opacity: 1.0;
+}
+
+.mail-image{
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  background-image:url("image/mail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mail-action{
+  float: left;
+  margin-left: 0.5rem;
+  text-align: center;
+  text-decoration:none;
+  color: white;
+}
+
+/* デフォルト始め　*/
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -1006,14 +471,7 @@ footer{
     margin-left: 5%;
     overflow: hidden;
   }
-/*
-  .about-text-wrapper{
-    float: left;
-    width: 62.4%;
-    height: auto;
-    margin-left: 2rem;
-  }
-*/
+
   .about-first-image{
     float: left;
     width: 28.4vw;
@@ -1022,20 +480,6 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
   }
-/*
-  .about-text-wrapper{
-    width: 62.4%;
-    height: auto;
-    margin-left: 2rem;
-  }
-*/
-/*
-  .about-subtitle{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-  */
 
   .about-first-subtitle{
     position: relative;
@@ -1066,17 +510,6 @@ footer{
     top: 1rem;
   }
 
-  .about-fifth-subtitle{
-    float: right;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 5vw;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-
   .about-first-detail{
     float: right;
     width: 55vw;
@@ -1087,369 +520,6 @@ footer{
     font-size: 18px;
     line-height: 1.5;
     color: #777777;
-  }
-
-  /*
-  .about-second-first-detail{
-    float: left;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-second-second-detail{
-    float: left;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-second-third-detail{
-    float: left;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-  */
-
-  .about-second-first-trouble{
-    /* float: left; */
-    position: relative;
-    width: 13em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #2C4A52;
-    opacity: 0.7;
-  }
-
-  .about-second-first-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #2C4A52;
-  }
-
-  .about-second-first-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #2C4A52;
-  }
-
-  .about-second-first-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-first-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-second-trouble{
-    /* float: left; */
-    position: relative;
-    width: 15em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #537072;
-    opacity: 0.7;
-  }
-
-  .about-second-second-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #537072;
-  }
-
-  .about-second-second-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #537072;
-  }
-
-  .about-second-second-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-second-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-third-trouble{
-    /* float: left; */
-    position: relative;
-    width: 16em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #8E9B97;
-    opacity: 0.7;
-  }
-
-  .about-second-third-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #8E9B97;
-  }
-
-  .about-second-third-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #8E9B97;
-  }
-
-  .about-second-third-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-third-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-fourth-detail{
-    /* float: left; */
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-third-detail{
-    float: right;
-    width: 55vw;
-    padding-top: 1rem;
-    margin-left: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-second-image{
-    float: right;
-    width: 28.4vw;
-    height: calc(28.4vw / 640 * 453);
-    margin-top: 1rem;
-    background-image:url("image/depressed_woman.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-third-image{
-    float: left;
-    width: 28.4vw;
-    height: 15vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_04.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-fourth-image{
-    float: left;
-    width: 28.4vw;
-    height: 15vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_05.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-fifth-image{
-    float: left;
-    width: 28.4vw;
-    height: calc(28.4vw / 640 * 427);
-    background-image:url("image/counseling_man.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  footer{
-    width: auto;
-    position: static;
-    /* bottom: 0; */
-    margin-top: 3rem;
-    background-color: #98DBC6;
-    overflow: hidden;
-  }
-
-  .tel-wrapper{
-    float: left;
-    width: auto;
-    height: auto;
-    padding: 1em 1rem;
-    border-radius: 5px;
-    margin-top: 3rem;
-    margin-left: 20vw;
-    background-color: #E6D72A;
-    overflow: hidden;
-  }
-
-  .telephone-image{
-    float: left;
-    width: 1rem;
-    height: 1rem;
-    background-image:url("image/telephone.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .tel-action{
-    float: left;
-    margin-left: 0.5rem;
-    text-decoration:none;
-    color: white;
-  }
-
-  /*
-  .line-it-button{
-    float: right;
-    padding-top: 3rem;
-    padding-right: 2rem;
-  }
-  */
-
-  .mail-wrapper{
-    float: right;
-    width: auto;
-    height: auto;
-    padding: 1rem 1rem;
-    border-radius: 5px;
-    margin-top: 3rem;
-    margin-right: 20vw;
-    margin-bottom: 3rem;
-    background-color: #5BC8AC;
-    overflow: hidden;
-  }
-
-  .mail-image{
-    float: left;
-    width: 1rem;
-    height: 1rem;
-    background-image:url("image/mail.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .mail-action{
-    float: left;
-    margin-left: 0.5rem;
-    text-align: center;
-    text-decoration:none;
-    color: white;
   }
 
   .about-second-sickness-wide-wrapper{
@@ -1494,6 +564,86 @@ footer{
     letter-spacing: 0.05em;
   }
 
+  .about-third-image{
+    float: left;
+    width: 28.4vw;
+    height: calc(28.4vw / 640 * 427);
+    background-image:url("image/counseling_man.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-third-subtitle{
+    float: right;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .about-third-detail{
+    float: right;
+    width: 55vw;
+    padding-top: 1rem;
+    margin-left: 5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  footer{
+    width: auto;
+    position: static;
+    margin-top: 3rem;
+    background-color: #98DBC6;
+    overflow: hidden;
+  }
+
+  .line-wrapper{
+    float: left;
+    padding-top: 3rem;
+    padding-left: 20vw;
+  }
+
+  .line-link{
+    height: 48px;
+  }
+
+  .mail-wrapper{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-right: 20vw;
+    margin-bottom: 3rem;
+    background-color: #5BC8AC;
+    overflow: hidden;
+  }
+
+  .mail-image{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    background-image:url("image/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mail-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1509,403 +659,6 @@ footer{
     /* font-family: 'Noto Sans JP',sans-serif; */
     font-weight:400;
     font-size: 40px;
-  }
-
-  .about-second-first-trouble{
-    /* float: left; */
-    position: relative;
-    width: 13em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #2C4A52;
-    opacity: 0.7;
-  }
-
-  .about-second-first-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #2C4A52;
-  }
-
-  .about-second-first-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #2C4A52;
-  }
-
-  .about-second-first-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-first-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-second-trouble{
-    /* float: left; */
-    position: relative;
-    width: 15em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #537072;
-    opacity: 0.7;
-  }
-
-  .about-second-second-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #537072;
-  }
-
-  .about-second-second-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #537072;
-  }
-
-  .about-second-second-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-second-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-third-trouble{
-    /* float: left; */
-    position: relative;
-    width: 16em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #8E9B97;
-    opacity: 0.7;
-  }
-
-  .about-second-third-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #8E9B97;
-  }
-
-  .about-second-third-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #8E9B97;
-  }
-
-  .about-second-third-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-third-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .time-wide-wrapper{
-    padding-bottom: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-    overflow: hidden;
-  }
-
-  .subject-wrapper{
-    float: left;
-    width: calc(45vw - 2rem);
-    height: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .subject-title{
-    font-family: 'Varela Round',sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-
-  .subject-subtitle{
-    padding-top: 1rem;
-    font-family: 'Open sans',sans-serif;
-    font-weight:700;
-    font-size: 16px;
-    color: #888888;
-  }
-
-  .subject-detail{
-    font-family: 'Open sans',sans-serif;
-    font-weight:400;
-    font-size: 16px;
-    color: #888888;
-  }
-
-  .time-wrapper-first{
-    width: auto;
-    height: auto;
-    /* padding-top: 2rem; */
-    padding-left: 5%;
-    padding-right: 5%;
-    border-top: 2px dotted #98DBC6;
-    border-bottom: 2px dotted #98DBC6;
-    margin-top: 2rem;
-  }
-
-  .time-wrapper{
-    width: auto;
-    height: auto;
-    /* padding-top: 2rem; */
-    padding-left: 5%;
-    padding-right: 5%;
-    /* border-top: 2px dotted #98DBC6; */
-    border-bottom: 2px dotted #98DBC6;
-    /* margin-top: 2rem; */
-  }
-/*
-  .time-wrapper{
-    float: left;
-    width: calc(45vw - 2rem);
-    height: auto;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 2rem;
-  }
-  */
-
-  .time-title{
-    font-family: 'Varela Round',sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-
-  .time-table-image{
-    width: calc(45vw - 2rem);
-    height: 8vh;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-image:url("http://miyoshi-mental.jp/img/timetable.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .time-subtitle{
-    padding-top: 1rem;
-    /* font-family: 'Open sans',sans-serif; */
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:700;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #888888;
-  }
-
-  .time-detail{
-    font-family: 'Open sans',sans-serif;
-    font-weight:400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #888888;
-  }
-
-  .QandA-wide-wrapper{
-    clear: both;
-  }
-
-  .QandA-wrapper{
-    float: left;
-    width: calc(45vw - 2rem);
-    height: auto;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    border: 2px solid orange;
-    border-radius: 10px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .Q{
-    padding-left: 1rem;
-    font-family: 'Open sans',sans-serif;
-    font-weight:600;
-    font-size: 16px;
-    color: #888888;
-  }
-
-  .A{
-    padding-top: 1rem;
-    padding-left: 1rem;
-    font-family: 'Open sans',sans-serif;
-    font-weight:400;
-    font-size: 16px;
-    color: #888888;
-  }
-
-  .access-wrapper{
-    clear: both;
-  }
-
-  .tel-wrapper{
-    float: left;
-    width: auto;
-    height: auto;
-    padding: 1.5rem 2rem;
-    border-radius: 5px;
-    margin-top: 3rem;
-    margin-left: 20vw;
-    background-color: #E6D72A;
-    overflow: hidden;
-  }
-
-  .telephone-image{
-    float: left;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image:url("image/telephone.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .tel-action{
-    float: left;
-    margin-left: 0.5rem;
-    text-decoration:none;
-    color: white;
-    font-size: 20px;
-  }
-
-  /*
-  .line-it-button{
-    float: right;
-    padding-top: 3rem;
-    padding-right: 2rem;
-  }
-  */
-
-  .mail-wrapper{
-    float: right;
-    width: auto;
-    height: auto;
-    padding: 1.5rem 2rem;
-    border-radius: 5px;
-    margin-top: 3rem;
-    margin-right: 20vw;
-    margin-bottom: 3rem;
-    background-color: #5BC8AC;
-    overflow: hidden;
-  }
-
-  .mail-image{
-    float: left;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image:url("image/mail.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .mail-action{
-    float: left;
-    margin-left: 0.5rem;
-    text-align: center;
-    text-decoration:none;
-    color: white;
-    font-size: 20px;
   }
 
   .about-second-sickness-wide-wrapper{
@@ -1949,6 +702,90 @@ footer{
     letter-spacing: 0.05em;
   }
 
+  .time-wide-wrapper{
+    padding-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+  }
+
+  .time-wrapper-first{
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 2rem;
+  }
+
+  .time-subtitle{
+    padding-top: 1rem;
+    /* font-family: 'Open sans',sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .time-detail{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .time-wrapper{
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 2px dotted #98DBC6;
+  }
+
+  .line-wrapper{
+    float: left;
+    padding-top: 3rem;
+    padding-left: 20vw;
+  }
+
+  .line-link{
+    height: 68px;
+  }
+
+  .mail-wrapper{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-right: 20vw;
+    margin-bottom: 3rem;
+    background-color: #5BC8AC;
+    overflow: hidden;
+  }
+
+  .mail-image{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("image/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mail-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -1974,14 +811,7 @@ footer{
     margin-left: 5%;
     overflow: hidden;
   }
-/*
-  .about-text-wrapper{
-    float: left;
-    width: 62.4%;
-    height: auto;
-    margin-left: 2rem;
-  }
-*/
+
   .about-first-image{
     float: left;
     width: 28.4vw;
@@ -1990,20 +820,6 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
   }
-/*
-  .about-text-wrapper{
-    width: 62.4%;
-    height: auto;
-    margin-left: 2rem;
-  }
-*/
-/*
-  .about-subtitle{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-  */
 
   .about-first-subtitle{
     position: relative;
@@ -2034,18 +850,6 @@ footer{
     top: 1rem;
   }
 
-  .about-fifth-subtitle{
-    float: right;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 0;
-    margin-right: 2.5vw;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-
   .about-first-detail{
     float: right;
     width: 55vw;
@@ -2056,462 +860,6 @@ footer{
     font-size: 18px;
     line-height: 1.5;
     color: #777777;
-  }
-
-/*
-  .about-second-first-detail{
-    float: left;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-second-second-detail{
-    float: left;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-second-third-detail{
-    float: left;
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-  */
-  .about-second-first-trouble{
-    /* float: left; */
-    position: relative;
-    width: 13em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #2C4A52;
-    opacity: 0.7;
-  }
-
-  .about-second-first-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #2C4A52;
-  }
-
-  .about-second-first-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #2C4A52;
-  }
-
-  .about-second-first-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-first-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-second-trouble{
-    /* float: left; */
-    position: relative;
-    width: 15em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #537072;
-    opacity: 0.7;
-  }
-
-  .about-second-second-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #537072;
-  }
-
-  .about-second-second-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #537072;
-  }
-
-  .about-second-second-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-second-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-third-trouble{
-    /* float: left; */
-    position: relative;
-    width: 16em;
-    margin-top: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    background-color: #8E9B97;
-    opacity: 0.7;
-  }
-
-  .about-second-third-trouble::before{
-    position: absolute;
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    font-size: 15px;
-    font-weight: 900;
-    right: -40px;
-    bottom: 0;
-    color: #8E9B97;
-  }
-
-  .about-second-third-trouble::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    font-weight: 900;
-    right: -23px;
-    bottom: 0;
-    color: #8E9B97;
-  }
-
-  .about-second-third-detail{
-    /* float: left; */
-    position: relative;
-    width: 50vw;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-    background-color: #e0edff;
-  }
-
-  .about-second-third-detail::before{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -1.75rem; /* テキストからどれくらい左か */
-    margin-top: -1rem;  /* ふきだし下からどれくらい上げるか */
-    border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
-  }
-
-  .about-second-fourth-detail{
-    /* float: left; */
-    width: 55vw;
-    padding-top: 1rem;
-    padding-right: 5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-third-detail{
-    float: right;
-    width: 55vw;
-    padding-top: 1rem;
-    margin-left: 0;
-    margin-right: 2.5vw;
-    font-family: 'Georgia','arial',sans-serif;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #777777;
-  }
-
-  .about-second-image{
-    float: right;
-    width: 28.4vw;
-    height: calc(28.4vw / 640 * 453);
-    margin-top: 1rem;
-    background-image:url("image/depressed_woman.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-third-image{
-    float: left;
-    width: 28.4vw;
-    height: 29vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_04.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-fourth-image{
-    float: left;
-    width: 28.4vw;
-    height: 29vh;
-    background-image:url("http://miyoshi-mental.jp/img/pict_05.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-fifth-image{
-    float: left;
-    width: 28.4vw;
-    height: calc(28.4vw / 640 * 427);
-    background-image:url("image/counseling_man.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .time-wide-wrapper{
-    padding-bottom: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-    overflow: hidden;
-  }
-
-  .subject-wrapper{
-    float: left;
-    width: calc(45vw - 2rem);
-    height: auto;
-  }
-
-  .subject-title{
-    font-family: 'Varela Round',sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-
-  .subject-subtitle{
-    padding-top: 1rem;
-    font-family: 'Open sans',sans-serif;
-    font-weight:700;
-    font-size: 16px;
-    color: #888888;
-  }
-
-  .subject-detail{
-    font-family: 'Open sans',sans-serif;
-    font-weight:400;
-    font-size: 16px;
-    color: #888888;
-  }
-
-  .time-wrapper-first{
-    width: auto;
-    height: auto;
-    /* padding-top: 2rem; */
-    padding-left: 5%;
-    padding-right: 5%;
-    border-top: 2px dotted #98DBC6;
-    border-bottom: 2px dotted #98DBC6;
-    margin-top: 2rem;
-  }
-
-  .time-wrapper{
-    width: auto;
-    height: auto;
-    /* padding-top: 2rem; */
-    padding-left: 5%;
-    padding-right: 5%;
-    /* border-top: 2px dotted #98DBC6; */
-    border-bottom: 2px dotted #98DBC6;
-    /* margin-top: 2rem; */
-  }
-
-/*
-  .time-wrapper{
-    float: left;
-    width: calc(45vw - 3rem);
-    height: auto;
-    margin-left: 2rem;
-  }
-  */
-
-  .time-title{
-    font-family: 'Varela Round',sans-serif;
-    font-weight:400;
-    font-size: 24px;
-  }
-
-  .time-table-image{
-    width: calc(45vw - 2rem);
-    height: 17vh;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-image:url("http://miyoshi-mental.jp/img/timetable.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .time-subtitle{
-    padding-top: 1rem;
-    /* font-family: 'Open sans',sans-serif; */
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:700;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #888888;
-  }
-
-  .time-detail{
-    font-family: 'Open sans',sans-serif;
-    font-weight:400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #888888;
-  }
-
-  .tel-wrapper{
-    float: left;
-    width: auto;
-    height: auto;
-    padding: 1.5rem 2rem;
-    border-radius: 5px;
-    margin-top: 3rem;
-    margin-left: 20vw;
-    background-color: #E6D72A;
-    overflow: hidden;
-  }
-
-  .telephone-image{
-    float: left;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image:url("image/telephone.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .tel-action{
-    float: left;
-    margin-left: 0.5rem;
-    text-decoration:none;
-    color: white;
-    font-size: 18px;
-  }
-
-  /*
-  .line-it-button{
-    float: right;
-    padding-top: 3rem;
-    padding-right: 2rem;
-  }
-  */
-
-  .mail-wrapper{
-    float: right;
-    width: auto;
-    height: auto;
-    padding: 1.5rem 2rem;
-    border-radius: 5px;
-    margin-top: 3rem;
-    margin-right: 20vw;
-    margin-bottom: 3rem;
-    background-color: #5BC8AC;
-    overflow: hidden;
-  }
-
-  .mail-image{
-    float: left;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image:url("image/mail.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .mail-action{
-    float: left;
-    margin-left: 0.5rem;
-    text-align: center;
-    text-decoration:none;
-    color: white;
-    font-size: 18px;
   }
 
   .about-second-sickness-wide-wrapper{
@@ -2549,10 +897,127 @@ footer{
     color: #fff;
     left: -1rem;
     bottom: 35%;
-    /* padding: 0.25rem; */
     font-size: 0.7em;
     line-height: 1;
     letter-spacing: 0.05em;
+  }
+
+  .about-third-image{
+    float: left;
+    width: 28.4vw;
+    height: calc(28.4vw / 640 * 427);
+    background-image:url("image/counseling_man.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-third-subtitle{
+    float: right;
+    width: 55vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 2.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .about-third-detail{
+    float: right;
+    width: 55vw;
+    padding-top: 1rem;
+    margin-left: 0;
+    margin-right: 2.5vw;
+    font-family: 'Georgia','arial',sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+  }
+
+  .time-wide-wrapper{
+    padding-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+  }
+
+  .time-wrapper-first{
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 2rem;
+  }
+
+  .time-subtitle{
+    padding-top: 1rem;
+    /* font-family: 'Open sans',sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .time-detail{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .time-wrapper{
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 2px dotted #98DBC6;
+  }
+
+  .line-wrapper{
+    float: left;
+    padding-top: 3rem;
+    padding-left: 20vw;
+  }
+
+  .line-link{
+    height: 66px;
+  }
+
+  .mail-wrapper{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-right: 20vw;
+    margin-bottom: 3rem;
+    background-color: #5BC8AC;
+    overflow: hidden;
+  }
+
+  .mail-image{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("image/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mail-action{
+    float: left;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
   }
 
 }
