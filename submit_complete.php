@@ -81,7 +81,6 @@ $mailer->FromName = MAIL_FROM_NAME;
 /// 送信先と件名・本文を設定してテスト送信
 /// 送信先アドレス
 $mailer->addAddress( $mail_address );
-// $mailer->addAddress( 'willkms314@gmail.com' );
 /// メール件名
 $mailer->Subject = MAIL_SUBJECT;
 /// メール本文
@@ -99,27 +98,6 @@ $mailer->Body = $body;
 
 /// メール送信
 $result = $mailer->send();
-
-/*
-if ( $result ) {
-  print_r('送信成功！！');
-} else {
-  print_r('送信エラー');
-  /// エラー内容全出力
-  var_export($mailer->ErrorInfo);
-}
-*/
-/*
-  echo $last_name;
-  echo $first_name;
-  echo $last_name_kana;
-  echo $first_name_kana;
-  echo $mail_address;
-  echo $TEL;
-  echo $sex;
-  echo $age;
-  echo $trouble;
-  */
 
   // クリックジャッギング対策
   header('X-FRAME-OPTIONS: DENY');
