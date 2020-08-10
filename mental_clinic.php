@@ -27,8 +27,7 @@ header('X-FRAME-OPTIONS: DENY');
       <div class = "remark-wrapper">
         <p class = "remark">
           新規開設キャンペーン<br>
-          ご新規様初回20分カウンセリング<br>
-          無料キャンペーン実施中!!
+          ご新規様初回20分無料カウンセリング実施中!!
         </p>
         <p class = "date">
           [ 2020.07.14 ]
@@ -44,10 +43,10 @@ header('X-FRAME-OPTIONS: DENY');
         <div class = "about-first-image">
         </div>
         <h3 class = "about-first-subtitle">
-          あなたの　の声を聞かせてください
+          あなたの心の声を聞かせてください
         </h3>
         <p class = "about-first-detail">
-          メンタルクリニックKでは主に中高生以上を対象に幅広い年齢層の方に対し心理療法を用いたカウンセリングを行っております。
+          メンタルクリニックKでは中高生以上を対象に幅広い年齢層の方に対し心理療法を用いたカウンセリングを行っております。
           カウンセリングはクライアント様とカウンセラーとの相性や信頼関係が大事と考え、<span class = "yellow-underline">初回の20分カウンセリングは無料</span>とさせていただいております。
 
 
@@ -94,6 +93,9 @@ header('X-FRAME-OPTIONS: DENY');
           <div class = "about-second-sickness-narrow-wrapper">
             <p class = "about-second-sickness">不安感がとれない</p>
           </div>
+          <div class = "about-second-sickness-narrow-wrapper">
+            <p class = "about-second-sickness">ただ話を聴いて欲しい</p>
+          </div>
         </div>
       </div>
       <div class = "about-contents-wrapper">
@@ -106,7 +108,8 @@ header('X-FRAME-OPTIONS: DENY');
           ケアストレスカウンセラー<br><br>
           盛岡を中心に岩手で学習塾や学校の教育機関で10年以上に渡り教育業に従事。<br>
           学校長やスーパーバイザーとしての立場で複数の親御さん、生徒の相談に乗ること延べ数100件。<br>
-          勉強の悩み以上に生き方の根幹に関わる問題の相談に乗りたいと思い始め、クリニック開設を決意する。
+          生き方の根幹に関わる問題の相談に乗りたいと思い、クリニック開設を決意。<br>
+          クライアント様に寄り添うカウンセリングを得意とする。
         </p>
       </div>
     </div>
@@ -125,24 +128,26 @@ header('X-FRAME-OPTIONS: DENY');
       <div class = "time-wrapper">
         <p class = "time-subtitle">ご利用方法：</p>
         <p class = "time-detail">
-          LINE、Skype、FaceTimeオーディオにて承っております。<br>
-          カウンセリングは完全予約制となっております。<br>
-          メール予約よりご予約下さい。<br>
+          LINE通話にて承っております。<br>
+          なお、カウンセリングは完全予約制となっております。<br>
+          メール予約または、LINE友達登録後、必要事項を記入の上ご予約下さい。<br>
+          メール予約後一日経っても返信がない場合は、<br>
+          お手数をおかけ致しますが、LINEよりお試し下さい。
         </p>
       </div>
       <div class = "time-wrapper">
         <p class = "time-subtitle">料金：</p>
         <p class = "time-detail">
-          ¥5,000/1時間　延長は10分につき¥1,000いただきます。<br>
+          ¥6,000/50分　延長は10分につき¥1,000いただきます。<br>
           <span class = "yellow-underline">学割あります！</span><br>
-          学生さんは初めてのカウンセリングの際、¥3,000/1時間  でご利用できます。
+          学生さんは初めてのカウンセリングに限り　¥3,000/50分 でご利用できます。
         </p>
       </div>
       <div class = "time-wrapper">
         <p class = "time-subtitle">お支払い：</p>
         <p class = "time-detail">
           お支払いはPayPalでお願いしております。<br>
-          カウンセリング前にお支払い下さい。
+          カウンセリング開始時間前までにお支払い下さい。
         </p>
       </div>
       <div class = "time-wrapper">

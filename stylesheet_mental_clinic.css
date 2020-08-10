@@ -222,7 +222,7 @@ input, select {
   background: linear-gradient(transparent 70%, yellow 70%);
   font-weight: bold;
 }
-
+/*
 .about-first-subtitle::before{
   position: absolute;
   font-family: "Font Awesome 5 Free",sans-serif;
@@ -232,7 +232,7 @@ input, select {
   left: calc(4em + 0.5rem);
   top: 1rem;
 }
-
+*/
 .about-second-subtitle{
   position: relative;
   font-family: 'Noto Sans JP', sans-serif;
@@ -498,18 +498,17 @@ footer{
     background: #d0ecff;
     border-radius: 5px;
   }
-
+/*
   .about-first-subtitle::before{
     position: absolute;
     font-family: "Font Awesome 5 Free",sans-serif;
     font-weight: 900;
     content: '\f004';
-    /* background: #2196F3; */
     color: pink;
     left: calc(4em + 1rem);
     top: 1rem;
   }
-
+*/
   .about-first-detail{
     float: right;
     width: 55vw;
@@ -838,18 +837,17 @@ footer{
     background: #d0ecff;
     border-radius: 5px;
   }
-
+/*
   .about-first-subtitle::before{
     position: absolute;
     font-family: "Font Awesome 5 Free",sans-serif;
     font-weight: 900;
     content: '\f004';
-    /* background: #2196F3; */
     color: pink;
     left: calc(4em + 1rem);
     top: 1rem;
   }
-
+*/
   .about-first-detail{
     float: right;
     width: 55vw;
