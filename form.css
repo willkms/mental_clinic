@@ -163,6 +163,13 @@ input{
   width: 3rem;
 }
 
+.TOS{
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  overflow-y: scroll;
+  background-color: #d0ecff;
+}
+
 textarea{
   width: calc(100% - 2rem);
   margin-left: 0.5rem;

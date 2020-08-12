@@ -27,7 +27,7 @@ header('X-FRAME-OPTIONS: DENY');
 </head>
 <body>
   <p class = "form-title">入力フォーム</p>
-  <form action = "confirm.php" method = "post" autocomplete = "off" onsubmit = "return InputCheck()">
+  <form action = "confirm.php" id = "form1" method = "post" autocomplete = "off" onsubmit = "return InputCheck()">
     <input type = "hidden" name = "sex" value = "">
     <input type = "hidden" name = "csrf_token" value = "<?= $csrf_token?>">
     <table class = "form-table">
@@ -53,7 +53,24 @@ header('X-FRAME-OPTIONS: DENY');
         <tr>
           <th class = "form-subtitle">年齢</th><td><input type = "number" name = "age" class = "age" value = "20"></td>
         </tr>
-
+        <tr>
+          <th class = "form-subtitle">利用規約</th>
+          <td>
+            <div class = "TOS">
+              あいうえお<br>
+              かきくけこ<br>
+              さしすせそ<br>
+              たちつてと<br>
+              なにぬねの<br>
+              はひふへほ<br>
+              まみむめも<br>
+              や　ゆ　よ<br>
+              らりるれろ<br>
+              わ　を　ん
+            </div>
+            <input type = "checkbox" id = "TOS" value = "同意する">同意します
+          </td>
+        </tr>
         <tr>
           <th class = "form-subtitle">ご相談内容<span class = "red">必須</span></th><td class = "textarea-cell"><textarea name = "trouble" id = "trouble" placeholder = "ご都合の良いお日にちや時間帯を教えてください。&#13;
                                                                                                                           例：7月28日の16時以降にお願いしたいです。"></textarea></td>

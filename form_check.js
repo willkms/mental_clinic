@@ -176,13 +176,36 @@ function TELPatternCheck(){
 
 }
 
+function TOSCheck(){
+
+  if(!document.getElementById("TOS").checked || document.getElementById("TOS").checked == null){
+
+    alert("利用規約に同意しない場合、カウンセリング予約はできません。");
+
+    setTimeout(function(){
+
+      document.getElementById("TOS").focus();
+
+    }, 1);
+
+    return false;
+
+  }
+
+  return true;
+
+}
+
 function InputCheck(){
 
  if(NullCheck()){
   if(EmailPatternCheck()){
    if(TELPatternCheck()){
+     if(TOSCheck()){
 
-    return true;
+       return true;
+
+    }
 
    }
 
