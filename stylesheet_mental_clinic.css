@@ -393,6 +393,10 @@ input, select {
   border-bottom: 2px dotted #98DBC6;
 }
 
+#paypal-button-container{
+  padding-bottom: 1rem;
+}
+
 footer{
   width: 100vw;
   position: fixed;
@@ -595,6 +599,11 @@ footer{
     color: #777777;
   }
 
+  #paypal-button-container{
+    width: 50%;
+    height: auto;
+  }
+
   footer{
     width: auto;
     position: static;
@@ -742,6 +751,11 @@ footer{
     padding-left: 5%;
     padding-right: 5%;
     border-bottom: 2px dotted #98DBC6;
+  }
+
+  #paypal-button-container{
+    width: 40%;
+    height: auto;
   }
 
   .line-wrapper{
@@ -975,6 +989,11 @@ footer{
     padding-left: 5%;
     padding-right: 5%;
     border-bottom: 2px dotted #98DBC6;
+  }
+
+  #paypal-button-container{
+    width: 40%;
+    height: auto;
   }
 
   .line-wrapper{
