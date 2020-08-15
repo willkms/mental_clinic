@@ -1,174 +1,401 @@
-<?php
-// クリックジャッギング対策
-header('X-FRAME-OPTIONS: DENY');
-?>
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>メンタルクリニックK｜オンラインカウンセリング・岩手盛岡発</title>
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheet_mental_clinic.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="mental_clinic.js" charset="utf-8"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンタルクリニックK｜オンラインカウンセリング・岩手盛岡発</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet_mental_clinic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!--
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="ex-partner.js" charset="utf-8"></script>
+    -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="mental_clinic.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section class = "intro">
+      <div class = "intro-wrapper">
+        <!--
+        <div class = "clinic-name">
+        </div>
+      -->
+      <!--
+        <div class = "pigeon-image">
+        </div>
+      -->
+        <p class = "clinic-name-write">
+          メンタルクリニック K
+        </p>
+        <div class = "remark-wrapper">
+          <p class = "remark">
+            新規開設キャンペーン<br>
+ご新規様初回20分無料カウンセリング実施中!!
+          </p>
+          <p class = "date">
+            [ 2020.07.14 ]
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--
+    <header>
+      <p class = "page-title">カウンセリングルーム　K</p>
+      <p class = "TEL">TEL:012-3456-789</p>
+    -->
+      <!--
+      <nav>
+        <ul>
+          <li><a>みよしメンタルクリニック　TOP</a></li>
+          <li><a>クリニックの紹介</a></li>
+          <li><a>診療科目と診療時間</a></li>
+          <li><a>Q&A</a></li>
+          <li><a>アクセス</a></li>
+        </ul>
+      </nav>
+    -->
+    <!--
+    </header>
+  -->
+    <section class = "about">
+      <div class = "about-wrapper">
+        <h2 class = "section-title-first">クリニックKの紹介</h2>
+        <div class = "about-contents-wrapper">
+          <div class = "about-first-image">
+          </div>
+          <!--
+          <div class = "about-text-wrapper">
+        -->
+            <h3 class = "about-first-subtitle">
+              あなたの心の声を聞かせてください
+            </h3>
+            <p class = "about-first-detail">
+              メンタルクリニックKでは中高生以上を対象に幅広い年齢層の方に対し心理療法を用いたカウンセリングを行っております。
+              カウンセリングはクライアント様とカウンセラーとの相性や信頼関係が大事と考え、<span class = "yellow-underline">初回の20分カウンセリングは無料</span>とさせていただいております。
 
-<body>
 
-  <section class = "intro">
-    <div class = "intro-wrapper">
-      <p class = "clinic-name-write">
-        メンタルクリニック K
+              <br><br><br>
+              ストレス社会と言われて久しい現代社会ですが、残念なことに、こころの病に対してのケアは十分ではありません。
+              日本の自殺者数も年々減少傾向にはありますが、年間2万人を超え、10代に限ってはわずかですが増加傾向にあります。
+              うつ病等のこころの病を放っておくということは、こういった重大な事態を招いてしまうこともあります。
+              こころの病は本人が気付かないうちに深刻化して行くことが多いため、少しでも変化を感じた時や、
+              どうしても今の気持ちを聞いて欲しい等のタイミングで適切にケアしていくことが 非常に大切になります。
+              <br><br><br>
+
+
+            </p>
+            <!--
+          </div>
+        -->
+        </div>
+        <div class = "about-contents-wrapper">
+          <!--
+          <div class = "about-text-wrapper">
+          -->
+            <h3 class = "about-second-subtitle">
+              こんな時にカウンセリングをご利用ください
+            </h3>
+
+<!--
+            <div class = "about-second-image">
+            </div>
+          -->
+            <div class = "about-second-sickness-wide-wrapper">
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">眠れない</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">気分が落ち込む</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">人の視線が怖い</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">食欲がでない</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">やる気がでない</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">不注意が目立つ</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">会社や学校に行けない</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">外出するのが怖い</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">不安感がとれない</p>
+              </div>
+              <div class = "about-second-sickness-narrow-wrapper">
+                <p class = "about-second-sickness">ただ話を聴いて欲しい</p>
+              </div>
+
+            </div>
+            <!--
+            <p class = "about-second-first-trouble">
+              ただ話を聴いてもらいたい…
+            </p>
+            <p class = "about-second-first-detail">
+              家族や友人など、近い存在であるが故になおさら胸の内、本音を話しづらい…。悩んでいると打ち明けると、ますます心配をかけてしまいそうだ…。
+              そのような時は、お話を聴く専門家・カウンセラーにご相談ください。
+            </p>
+            <p class = "about-second-second-trouble">
+              なんだか気持ちがモヤモヤする…
+            </p>
+            <p class = "about-second-second-detail">
+              身近な人間関係、原因がよくわからない不安や落ち込み、焦りや苛立ち…日常生活の中ですっきりしない「何か」を抱えていませんか？
+              一人で考えても堂々めぐり、かといって友達や知り合いに相談する内容ではない…。そんな時、お話を聴く専門家、カウンセラーにご相談ください。
+              あなたの気持ちをじっくりとお聴きし、いろんな角度から一緒に考えていく中で、気持ちがすっきりしたり、解決方法が見つかるかもしれません。
+            </p>
+            <p class = "about-second-third-trouble">
+              特に困っていることはないけれど…
+            <p class = "about-second-third-detail">
+              大きな悩みがなくても、例えば月に一回定期的にカウンセリングを受けることで、今の自分を見つめなおし、新たなエネルギーを充電することができます。
+              カウンセラーはいつでもあなたをお待ちしています。
+            </p>
+            <p class = "about-second-fourth-detail">
+              …など色々、まずはご相談ください。
+            </p>
+          -->
+
+
+            <!--
+          </div>
+        -->
+        </div>
+        <!--
+        <div class = "about-contents-wrapper">
+          <div class = "about-third-image">
+          </div>
+          <div class = "about-text-wrapper">
+            <h3 class = "about-subtitle">
+              話しやすい雰囲気づくり
+            </h3>
+            <p class = "about-detail">
+              暖かい雰囲気の話しやすいクリニックです。
+              ちょっとした不安や不眠でもご相談ください。
+            </p>
+          </div>
+        </div>
+      -->
+      <!--
+        <div class = "about-contents-wrapper">
+          <div class = "about-fourth-image">
+          </div>
+          <div class = "about-text-wrapper">
+            <h3 class = "about-subtitle">
+              働く人の応援を
+            </h3>
+
+            <p class = "about-detail">
+              当クリニックは、仙台市中心部に位置しており、働きながらの通院・治療・相談がしやすいクリニックです。
+              患者さまの利便性と通いやすさを高めるために夜19時までの診療や土日の診療も行っております。
+            </p>
+          </div>
+        </div>
+      -->
+        <div class = "about-contents-wrapper">
+          <div class = "about-fifth-image">
+          </div>
+        <!--
+          <div class = "about-text-wrapper">
+          -->
+            <h3 class = "about-fifth-subtitle">
+              心理カウンセラー：加藤千尋
+            </h3>
+            <p class = "about-third-detail">
+              ケアストレスカウンセラー<br><br>
+              盛岡を中心に岩手で学習塾や学校等の教育機関で10年以上に渡り教育業に従事。<br>
+              学校長やスーパーバイザーとしての立場で複数の親御さん、生徒の相談に乗ること延べ数100件。<br>
+              生き方の根幹に関わる問題の相談に乗りたいと思い、クリニック開設を決意。<br>
+              クライアント様に寄り添うカウンセリングを得意とする。
+            </p>
+            <!--
+          </div>
+        -->
+        </div>
+      </div>
+    </section>
+
+    <section class = "time">
+      <div class = "time-wide-wrapper">
+        <h2 class = "section-title">ご利用案内</h2>
+        <!--
+        <div class = "subject-wrapper">
+          <h3 class = "subject-title">診療科目</h3>
+          <p class = "subject-subtitle">心療内科：</p>
+          <p class = "subject-detail">心の病気からくる体調不良など様々な心身症やパニック障害、強迫性障害等に対応します。</p>
+          <p class = "subject-subtitle">精神科：</p>
+          <p class = "subject-detail">精神症状、統合失調症、うつ病等の治療をします。</p>
+          <p class = "subject-subtitle">物忘れ外来：</p>
+          <p class = "subject-detail">物忘れ相談、認知症治療を行ないます。</p>
+          <p class = "subject-subtitle">その他：</p>
+          <p class = "subject-detail">不登校、ひきこもり、ADHDなどに相談や対応をします。（高校生以上）</p>
+        </div>
+      -->
+        <div class = "time-wrapper-first">
+          <!--
+          <h3 class = "time-title">受付時間</h3>
+          <div class = "time-table-image">
+          </div>
+        -->
+          <p class = "time-subtitle">受付時間：</p>
+          <p class = "time-detail">
+            12:00〜21:00<br>
+            最終カウンセリング開始時間は20:00となっております。
+          </p>
+        </div>
+        <div class = "time-wrapper">
+          <p class = "time-subtitle">ご利用方法：</p>
+          <p class = "time-detail">
+            LINE通話にて承っております。<br>
+            なお、カウンセリングは完全予約制となっております。<br>
+            メール予約または、LINE友達登録後、必要事項を記入の上ご予約下さい。<br>
+            メール予約後一日経っても返信がない場合は、<br>
+            お手数をおかけ致しますが、LINEよりお試し下さい。
+          </p>
+        </div>
+        <div class = "time-wrapper">
+          <p class = "time-subtitle">料金：</p>
+          <p class = "time-detail">
+            ¥6,000/50分　延長は10分につき¥1,000いただきます。<br>
+            <span class = "yellow-underline">学割あります！</span><br>
+            学生さんは初めてのカウンセリングに限り　¥3,000/50分  でご利用できます。
+          </p>
+        </div>
+        <div class = "time-wrapper">
+          <p class = "time-subtitle">お支払い：</p>
+          <p class = "time-detail">
+            お支払いはPayPalでお願いしております。<br>
+            カウンセリング開始時間前までにお支払い下さい。
+
+            <!-- paypal決済ボタン -->
+            <div id="paypal-button-container"></div>
+            <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=JPY" data-sdk-integration-source="button-factory"></script>
+            <script>
+            paypal.Buttons({
+              style: {
+                shape: 'pill',
+                color: 'blue',
+                layout: 'horizontal',
+                label: 'paypal',
+
+              },
+              createOrder: function(data, actions) {
+                return actions.order.create({
+                  purchase_units: [{
+                    amount: {
+                      value: '6000'
+                    }
+                  }]
+                });
+              },
+              onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+              }
+            }).render('#paypal-button-container');
+          </script>
+          </p>
+        </div>
+        <div class = "time-wrapper">
+          <p class = "time-subtitle">ダミー：</p>
+          <p class = "time-detail">
+            これはダミーの文章です。<br>
+            文章を追加した場合の一例を表示しています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+
+    <section class = "QandA">
+      <div class = "QandA-wide-wrapper">
+        <h2 class = "section-title">初めての方向けの Q & A</h2>
+        <div class = "QandA-wrapper">
+          <p class = "Q">
+            <span class = "pink">Q.</span>初診は予約制ですか？
+          </p>
+          <p class = "A">
+            <span class = "orange">A.</span>予約制ではありません。
+            初診受付時間内にお越しください。
+            診察状況にって受付出来ない時がございます。
+          </p>
+        </div>
+        <div class = "QandA-wrapper">
+          <p class = "Q">
+            <span class = "pink">Q.</span>受診時に必要なものはありますか？
+          </p>
+          <p class = "A">
+            <span class = "orange">A.</span>保険証（お持ちの方）、現在飲んでいるお薬のある方は、紹介状、お薬手帳をおねがいします。
+          </p>
+        </div>
+        <div class = "QandA-wrapper">
+          <p class = "Q">
+            <span class = "pink">Q.</span>風邪や腹痛で受診したいのですが？
+          </p>
+          <p class = "A">
+            <span class = "orange">A.</span>現在、一般内科の診療は再診の方のみ、対応しております。
+            なお、心療内科の診療は平常通りです。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class = "access">
+      <div class = "access-wrapper">
+        <h2 class = "section-title">クリニックへのアクセス</h2>
+        <div class = "access-lead-wrapper">
+          <div class = "building-image">
+          </div>
+          <p class = "access">
+            〒980-0021 仙台市青葉区中央2丁目2-10 仙都会舘ビル4階
+          </p>
+        </div>
+        <p class = "access-remark">
+          <span class = "orange">青葉通り沿いの１階に岩手銀行が入っているビルの４階です。</span><br>
+          ※青葉通りに面した入口よりお入りください。
+        </p>
+        <div class = "phone-number-wrapper">
+          <div class = "phone-image">
+          </div>
+          <p class = "phone-number">
+            TEL:022-797-7145
+          </p>
+        </div>
+        <p class = "transportation">[JR・地下鉄] 仙台駅より徒歩5分</p>
+        <p class = "transportation">[JR仙石線]あおば通駅より徒歩1分</p>
+        <p class = "transportation">[バス]電力ビル前バス停より徒歩3分</p>
+      </div>
+    </section>
+  -->
+    <footer>
+      <!--
+      <p class = "copyright">
+        ©Copyright 2014 . Aoba-Dori Chuo Miyoshi Mental Clinic
       </p>
-      <div class = "remark-wrapper">
-        <p class = "remark">
-          新規開設キャンペーン<br>
-          ご新規様初回20分無料カウンセリング実施中!!
-        </p>
-        <p class = "date">
-          [ 2020.07.14 ]
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class = "about">
-    <div class = "about-wrapper">
-      <h2 class = "section-title-first">クリニックKの紹介</h2>
-      <div class = "about-contents-wrapper">
-        <div class = "about-first-image">
-        </div>
-        <h3 class = "about-first-subtitle">
-          あなたの心の声を聞かせてください
-        </h3>
-        <p class = "about-first-detail">
-          メンタルクリニックKでは中高生以上を対象に幅広い年齢層の方に対し心理療法を用いたカウンセリングを行っております。
-          カウンセリングはクライアント様とカウンセラーとの相性や信頼関係が大事と考え、<span class = "yellow-underline">初回の20分カウンセリングは無料</span>とさせていただいております。
-
-
-          <br><br><br>
-          ストレス社会と言われて久しい現代社会ですが、残念なことに、こころの病に対してのケアは十分ではありません。
-          日本の自殺者数も年々減少傾向にはありますが、年間2万人を超え、10代に限ってはわずかですが増加傾向にあります。
-          うつ病等のこころの病を放っておくということは、こういった重大な事態を招いてしまうこともあります。
-          こころの病は本人が気付かないうちに深刻化して行くことが多いため、少しでも変化を感じた時や、
-          どうしても今の気持ちを聞いて欲しい等のタイミングで適切にケアしていくことが 非常に大切になります。
-          <br><br><br>
-
-
-        </p>
-      </div>
-      <div class = "about-contents-wrapper">
-        <h3 class = "about-second-subtitle">
-          こんな時にカウンセリングをご利用ください
-        </h3>
-        <div class = "about-second-sickness-wide-wrapper">
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">眠れない</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">気分が落ち込む</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">人の視線が怖い</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">食欲がでない</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">やる気がでない</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">不注意が目立つ</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">会社や学校に行けない</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">外出するのが怖い</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">不安感がとれない</p>
-          </div>
-          <div class = "about-second-sickness-narrow-wrapper">
-            <p class = "about-second-sickness">ただ話を聴いて欲しい</p>
-          </div>
-        </div>
-      </div>
-      <div class = "about-contents-wrapper">
-        <div class = "about-third-image">
-        </div>
-        <h3 class = "about-third-subtitle">
-          心理カウンセラー：加藤千尋
-        </h3>
-        <p class = "about-third-detail">
-          ケアストレスカウンセラー<br><br>
-          盛岡を中心に岩手で学習塾や学校の教育機関で10年以上に渡り教育業に従事。<br>
-          学校長やスーパーバイザーとしての立場で複数の親御さん、生徒の相談に乗ること延べ数100件。<br>
-          生き方の根幹に関わる問題の相談に乗りたいと思い、クリニック開設を決意。<br>
-          クライアント様に寄り添うカウンセリングを得意とする。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class = "time">
-    <div class = "time-wide-wrapper">
-      <h2 class = "section-title">ご利用案内</h2>
-      <div class = "time-wrapper-first">
-        <p class = "time-subtitle">受付時間：</p>
-        <p class = "time-detail">
-          12:00〜21:00<br>
-          最終カウンセリング開始時間は20:00となっております。
-        </p>
-      </div>
-      <div class = "time-wrapper">
-        <p class = "time-subtitle">ご利用方法：</p>
-        <p class = "time-detail">
-          LINE通話にて承っております。<br>
-          なお、カウンセリングは完全予約制となっております。<br>
-          メール予約または、LINE友達登録後、必要事項を記入の上ご予約下さい。<br>
-          メール予約後一日経っても返信がない場合は、<br>
-          お手数をおかけ致しますが、LINEよりお試し下さい。
-        </p>
-      </div>
-      <div class = "time-wrapper">
-        <p class = "time-subtitle">料金：</p>
-        <p class = "time-detail">
-          ¥6,000/50分　延長は10分につき¥1,000いただきます。<br>
-          <span class = "yellow-underline">学割あります！</span><br>
-          学生さんは初めてのカウンセリングに限り　¥3,000/50分 でご利用できます。
-        </p>
-      </div>
-      <div class = "time-wrapper">
-        <p class = "time-subtitle">お支払い：</p>
-        <p class = "time-detail">
-          お支払いはPayPalでお願いしております。<br>
-          カウンセリング開始時間前までにお支払い下さい。
-        </p>
-      </div>
-      <div class = "time-wrapper">
-        <p class = "time-subtitle">ダミー：</p>
-        <p class = "time-detail">
-          これはダミーの文章です。<br>
-          文章を追加した場合の一例を表示しています。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <a href="https://lin.ee/tY5APzc" class = "line-wrapper">
-      <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class = "line-link">
-    </a>
-    <div class = "mail-wrapper">
-      <div class = "mail-image">
-      </div>
-      <a href="form.php" class = "mail-action">メール予約</a>
-    </div>
-  </footer>
-</body>
+    -->
+     <div class = "tel-wrapper">
+       <div class = "telephone-image">
+       </div>
+       <a href="tel:090-7791-7677" class = "tel-action">電話する</a>
+     </div>
+     <!--
+     <div class="line-it-button" data-lang="ja" data-type="friend" data-lineid="@lineteamjp" style = "display:none;"></div>
+     <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+   -->
+     <div class = "mail-wrapper">
+       <div class = "mail-image">
+       </div>
+       <a href="http://localhost:81/workspace/form.php" class = "mail-action">メール予約</a>
+     </div>
+    </footer>
+  </body>
 </html>
