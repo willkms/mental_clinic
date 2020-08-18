@@ -146,37 +146,59 @@ header('X-FRAME-OPTIONS: DENY');
       <div class = "time-wrapper">
         <p class = "time-subtitle">お支払い：</p>
         <p class = "time-detail">
-          お支払いはPayPalでお願いしております。<br>
+          お支払いはPayPalまたは口座振り込みでお願いしております。<br>
           カウンセリング開始時間前までにお支払い下さい。
-          <!-- paypal決済ボタン -->
-          <div id="paypal-button-container"></div>
-          <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=JPY" data-sdk-integration-source="button-factory"></script>
-          <script>
-          paypal.Buttons({
-            style: {
-              shape: 'pill',
-              color: 'blue',
-              layout: 'horizontal',
-              label: 'paypal',
-
-            },
-            createOrder: function(data, actions) {
-              return actions.order.create({
-                purchase_units: [{
-                  amount: {
-                    value: '6000'
-                  }
-                }]
-              });
-            },
-            onApprove: function(data, actions) {
-              return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-              });
-            }
-          }).render('#paypal-button-container');
-        </script>
         </p>
+          <div class = "payment-wrapper">
+            <p class = "payment-title">PayPalでお支払いの場合</p>
+            <p class = "payment-detail">
+              以下のボタンをクリックし、必要事項を記入して頂ければ、
+              お支払いが完了します。
+
+              <!-- paypal決済ボタン -->
+              <div id="paypal-button-container"></div>
+              <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=JPY" data-sdk-integration-source="button-factory"></script>
+              <script>
+              paypal.Buttons({
+                style: {
+                  shape: 'pill',
+                  color: 'blue',
+                  layout: 'horizontal',
+                  label: 'paypal',
+
+                },
+                createOrder: function(data, actions) {
+                  return actions.order.create({
+                    purchase_units: [{
+                      amount: {
+                        value: '6000'
+                      }
+                    }]
+                  });
+                },
+                onApprove: function(data, actions) {
+                  return actions.order.capture().then(function(details) {
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                  });
+                }
+              }).render('#paypal-button-container');
+            </script>
+            </p>
+          </div>
+
+          <div class = "payment-wrapper">
+            <p class = "payment-title">口座振り込みでお支払いの場合</p>
+            <p class = "payment-detail">
+              お振込み先は以下の通りです。<br><br>
+              ゆうちょ銀行<br>
+              店名（店番）　〇二九（ゼロニキュウ）店<br>
+              預金種目　当座<br>
+              口座番号　１４２６８４<br>
+              口座名称（漢字）　セレーナメンタルクリニック<br>
+              口座名称（カナ）　セレーナメンタルクリニック<br>
+              口座記号番号　00260-5-142684<br>
+            </p>
+          </div>
       </div>
       <div class = "time-wrapper">
         <p class = "time-subtitle">ダミー：</p>
