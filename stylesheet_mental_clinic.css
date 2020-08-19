@@ -106,32 +106,57 @@ input, select {
 /*  CSS初期化終わり  */
 /* デフォルト始め　*/
 
-.intro-wrapper{
-  background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
+.slider figure.slider-first{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 30vh;
-  padding-bottom: 22.5vh;
+  background-position: center;
+  background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
+}
+
+.slider figure.slider-second{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: radial-gradient(circle farthest-side, white, transparent), url("image/forest_another.jpg");
+}
+
+.slider figure.slider-third{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: radial-gradient(circle farthest-side, white, transparent), url("image/tree_sky.jpg");
 }
 
 .clinic-name-write{
+  position: absolute;
   width: 90%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  top: 30vh;
+  left: 5%;
   text-align: center;
   font-family: 'Noticia Text', serif;
-  /* font-family: 'Noto Sans JP',sans-serif; */
   font-weight:400;
   font-size: 32px;
 }
 
 .remark-wrapper{
+  position: absolute;
   width: 60%;
   height: auto;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  top: calc(30vh + 5rem);
+  left: calc((100% - 60%) / 2 - 2rem);
   border-radius: 10px;
   padding: 2rem;
   background-color: white;
@@ -141,7 +166,6 @@ input, select {
 
 .remark{
   font-family: 'Open sans',sans-serif;
-  /* font-family: 'Noticia Text', serif; */
   font-weight:400;
   font-size: 16px;
 }
@@ -166,6 +190,9 @@ input, select {
   font-size: 40px;
   color: black;
   text-align: center;
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: 1.0s;
 }
 
 .section-title-first::before{
@@ -185,6 +212,9 @@ input, select {
   margin-top: 5vh;
   margin-left: 5%;
   margin-right: 5%;
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: 1.0s;
 }
 
 .about-first-image{
@@ -345,6 +375,9 @@ input, select {
   font-size: 40px;
   color: black;
   text-align: center;
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: 1.0s;
 }
 
 .section-title::before{
@@ -365,6 +398,9 @@ input, select {
   border-top: 2px dotted #98DBC6;
   border-bottom: 2px dotted #98DBC6;
   margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: 1.0s;
 }
 
 .time-subtitle{
@@ -391,6 +427,9 @@ input, select {
   padding-left: 5%;
   padding-right: 5%;
   border-bottom: 2px dotted #98DBC6;
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: 1.0s;
 }
 
 .payment-wrapper{
@@ -483,16 +522,74 @@ footer{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+  .slider figure.slider-first{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
+  }
+
+  .slider figure.slider-second{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/forest_another.jpg");
+  }
+
+  .slider figure.slider-third{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/tree_sky.jpg");
+  }
+
   .clinic-name-write{
+    position: absolute;
     width: 90%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    top: 30vh;
+    left: 5%;
     text-align: center;
     font-family: 'Noticia Text', serif;
-    /* font-family: 'Noto Sans JP',sans-serif; */
     font-weight:400;
     font-size: 36px;
+  }
+
+  .remark-wrapper{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: calc(30vh + 5rem);
+    left: calc((100% - 60%) / 2 - 2rem);
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+  }
+
+  .remark{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+  }
+
+  .date{
+    font-family: 'monospace',sans-serif;
+    font-weight:400;
+    font-size: 12px;
   }
 
   .about-contents-wrapper{
@@ -502,6 +599,9 @@ footer{
     margin-top: 5vh;
     margin-left: 5%;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .about-first-image{
@@ -634,6 +734,9 @@ footer{
     padding-right: 5%;
     border-bottom: 2px dotted #98DBC6;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .payment-wrapper{
@@ -725,16 +828,74 @@ footer{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .slider figure.slider-first{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
+  }
+
+  .slider figure.slider-second{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/forest_another.jpg");
+  }
+
+  .slider figure.slider-third{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/tree_sky.jpg");
+  }
+
   .clinic-name-write{
+    position: absolute;
     width: 90%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    top: 30vh;
+    left: 5%;
     text-align: center;
     font-family: 'Noticia Text', serif;
-    /* font-family: 'Noto Sans JP',sans-serif; */
     font-weight:400;
     font-size: 40px;
+  }
+
+  .remark-wrapper{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: calc(30vh + 5rem);
+    left: calc((100% - 60%) / 2 - 2rem);
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+  }
+
+  .remark{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+  }
+
+  .date{
+    font-family: 'monospace',sans-serif;
+    font-weight:400;
+    font-size: 12px;
   }
 
   .about-second-sickness-wide-wrapper{
@@ -793,6 +954,9 @@ footer{
     border-top: 2px dotted #98DBC6;
     border-bottom: 2px dotted #98DBC6;
     margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .time-subtitle{
@@ -820,6 +984,9 @@ footer{
     padding-right: 5%;
     border-bottom: 2px dotted #98DBC6;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .payment-wrapper{
@@ -904,16 +1071,74 @@ footer{
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+  .slider figure.slider-first{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/sky.jpg");
+  }
+
+  .slider figure.slider-second{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/forest_another.jpg");
+  }
+
+  .slider figure.slider-third{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(circle farthest-side, white, transparent), url("image/tree_sky.jpg");
+  }
+
   .clinic-name-write{
+    position: absolute;
     width: 90%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    top: 30vh;
+    left: 5%;
     text-align: center;
     font-family: 'Noticia Text', serif;
-    /* font-family: 'Noto Sans JP',sans-serif; */
     font-weight:400;
     font-size: 42px;
+  }
+
+  .remark-wrapper{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: calc(30vh + 5rem);
+    left: calc((100% - 60%) / 2 - 2rem);
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+  }
+
+  .remark{
+    font-family: 'Open sans',sans-serif;
+    font-weight:400;
+    font-size: 16px;
+  }
+
+  .date{
+    font-family: 'monospace',sans-serif;
+    font-weight:400;
+    font-size: 12px;
   }
 
   .about-contents-wrapper{
@@ -923,6 +1148,9 @@ footer{
     margin-top: 5vh;
     margin-left: 5%;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .about-first-image{
@@ -1063,6 +1291,9 @@ footer{
     border-top: 2px dotted #98DBC6;
     border-bottom: 2px dotted #98DBC6;
     margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .time-subtitle{
@@ -1090,6 +1321,9 @@ footer{
     padding-right: 5%;
     border-bottom: 2px dotted #98DBC6;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: 1.0s;
   }
 
   .payment-wrapper{
