@@ -168,7 +168,7 @@ header('X-FRAME-OPTIONS: DENY');
               お支払いが完了します。
 
               <!-- paypalver.3 -->
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-button-container">
               <input type="hidden" name="cmd" value="_s-xclick">
               <input type="hidden" name="hosted_button_id" value="6BTQQFUJDW9PC">
               <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
