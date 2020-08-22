@@ -301,7 +301,7 @@ input, select {
   padding-bottom: 2rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #E1E3E4;
+  background-color: #d0ecff;
 }
 
 .about-second-sickness-narrow-wrapper{
@@ -310,7 +310,7 @@ input, select {
   margin-top: 1rem;
   border-radius: 5px;
   padding: 1rem 0.5rem 1rem 1.5rem;
-  background-color: #83BAD6;
+  background-color: #2196F3;
   /* text-align: center; */
 }
 
@@ -432,17 +432,60 @@ input, select {
   transition: 1.0s;
 }
 
-.payment-wrapper{
+.flow-wrapper{
   width: auto;
   height: auto;
   padding: 0 1rem 1rem 1rem;
+}
+
+.flow-title{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+  text-align: center;
+}
+
+.step-wrapper{
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
   border: 2px dotted #98DBC6;
-  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.step-title{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  background-color: #009944;
+}
+
+.step-detail{
+  padding-top: 1rem;
+  font-family: 'Open sans',sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+}
+
+.payment-wrapper{
+  width: auto;
+  height: auto;
+  padding: 0 1rem 2rem 1rem;
+  border: 2px dotted #98DBC6;
+  margin-bottom: 2rem;
 }
 
 .payment-title{
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight:700;
   font-size: 16px;
@@ -459,8 +502,37 @@ input, select {
   color: #888888;
 }
 
+.paypal-first-wrapper{
+  width: 80%;
+  height: auto;
+  padding: 1rem 0;
+  border-top: 2px dotted #98DBC6;
+  border-bottom: 2px dotted #98DBC6;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paypal-wrapper{
+  width: 80%;
+  height: auto;
+  padding: 1rem 0;
+  border-bottom: 2px dotted #98DBC6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.payment-subtitle{
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+}
+
 #paypal-button-container{
-  width: 50%;
+  width: 60%;
   padding-top: 1rem;
   padding-bottom: 0;
   margin-left: auto;
@@ -665,7 +737,7 @@ footer{
     padding-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #E1E3E4;
+    background-color: #d0ecff;
   }
 
   .about-second-sickness-narrow-wrapper{
@@ -674,7 +746,7 @@ footer{
     margin-top: 1rem;
     border-radius: 5px;
     padding: 1rem 0.5rem 1rem 1.5rem;
-    background-color: #83BAD6;
+    background-color: #2196F3;
     /* text-align: center; */
   }
 
@@ -742,6 +814,52 @@ footer{
     transition: 1.0s;
   }
 
+  .flow-wrapper{
+    width: auto;
+    height: auto;
+    padding: 0 0 1rem 0;
+    overflow: hidden;
+  }
+
+  .flow-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+    text-align: center;
+  }
+
+  .step-wrapper{
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px dotted #98DBC6;
+    text-align: center;
+  }
+
+  .step-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: #009944;
+  }
+
+  .step-detail{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
   .payment-wrapper{
     float: left;
     width: 40%;
@@ -750,6 +868,7 @@ footer{
     border: 2px dotted #98DBC6;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
+    overflow: hidden;
   }
 
   .payment-title{
@@ -766,6 +885,35 @@ footer{
     padding-top: 1rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .paypal-first-wrapper{
+    width: 80%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paypal-wrapper{
+    width: 80%;
+    height: auto;
+    padding: 1rem 0;
+    border-bottom: 2px dotted #98DBC6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .payment-subtitle{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
     font-size: 16px;
     line-height: 1.5;
     color: #888888;
@@ -912,7 +1060,7 @@ footer{
     padding-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #E1E3E4;
+    background-color: #d0ecff;
   }
 
   .about-second-sickness-narrow-wrapper{
@@ -921,7 +1069,7 @@ footer{
     margin-top: 1rem;
     border-radius: 5px;
     padding: 1rem 0.5rem 1rem 1.5rem;
-    background-color: #83BAD6;
+    background-color: #2196F3;
     /* text-align: center; */
   }
 
@@ -994,6 +1142,53 @@ footer{
     transition: 1.0s;
   }
 
+  .flow-wrapper{
+    width: auto;
+    height: auto;
+    padding: 0 0 1rem 0;
+    overflow: hidden;
+  }
+
+  .flow-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+    text-align: center;
+  }
+
+  .step-wrapper{
+    float: left;
+    width: 13.5%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 2px dotted #98DBC6;
+    text-align: center;
+  }
+
+  .step-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: #009944;
+  }
+
+  .step-detail{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
   .payment-wrapper{
     float: left;
     width: 40%;
@@ -1023,13 +1218,46 @@ footer{
     color: #888888;
   }
 
+  .paypal-first-wrapper{
+    float: left;
+    width: 35%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  .paypal-wrapper{
+    float: left;
+    width: 35%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  .payment-subtitle{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
   #paypal-button-container{
-    width: 40%;
+    width: 100%;
     height: auto;
     padding-top: 1rem;
     padding-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .line-wrapper{
@@ -1214,20 +1442,25 @@ footer{
     width: auto;
     height: auto;
     margin-top: 2rem;
+    /* border: 3px dotted #d0ecff; */
     padding-top: 1rem;
     padding-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #E1E3E4;
+    /* background-color: #E1E3E4; */
+    background-color: #d0ecff;
   }
 
   .about-second-sickness-narrow-wrapper{
     width: 22.5%;
     height: auto;
     margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     border-radius: 5px;
     padding: 1rem 0.5rem 1rem 1.5rem;
-    background-color: #83BAD6;
+    /* background-color: #83BAD6; */
+    background-color: #2196F3;
     /* text-align: center; */
   }
 
@@ -1241,7 +1474,7 @@ footer{
     font-family: "Font Awesome 5 Free",sans-serif;
     font-weight: 900;
     content: '\f00c';
-    color: #fff;
+    color: white;
     left: -1rem;
     bottom: 35%;
     font-size: 0.7em;
@@ -1333,6 +1566,53 @@ footer{
     transition: 1.0s;
   }
 
+  .flow-wrapper{
+    width: auto;
+    height: auto;
+    padding: 0 0 1rem 0;
+    overflow: hidden;
+  }
+
+  .flow-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+    text-align: center;
+  }
+
+  .step-wrapper{
+    float: left;
+    width: 14.5%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 2px dotted #98DBC6;
+    text-align: center;
+  }
+
+  .step-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: #009944;
+  }
+
+  .step-detail{
+    padding-top: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
   .payment-wrapper{
     float: left;
     width: 40%;
@@ -1362,8 +1642,41 @@ footer{
     color: #888888;
   }
 
+  .paypal-first-wrapper{
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .paypal-wrapper{
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .payment-subtitle{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
   #paypal-button-container{
-    width: 30%;
+    width: 75%;
     height: auto;
     padding-top: 1rem;
     padding-bottom: 0;

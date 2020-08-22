@@ -144,7 +144,30 @@ header('X-FRAME-OPTIONS: DENY');
           LINE通話にて承っております。<br>
           カウンセリングは完全予約制となっております。<br>
           LINE友達追加後、必要事項をご記入の上ご予約下さい。<br><br>
-          カウンセリングまでの流れ：LINE友達追加→必要事項記入→予約可否のご連絡→お支払い→カウンセリング
+          <!-- カウンセリングまでの流れ：LINE友達追加→必要事項記入→予約可否のご連絡→お支払い→カウンセリング -->
+          <div class = "flow-wrapper">
+            <p class = "flow-title">カウンセリングまでの流れ</p>
+            <div class = "step-wrapper">
+              <p class = "step-title">STEP 1</p>
+              <p class = "step-detail">LINE友達追加</p>
+            </div>
+            <div class = "step-wrapper">
+              <p class = "step-title">STEP 2</p>
+              <p class = "step-detail">必要事項記入</p>
+            </div>
+            <div class = "step-wrapper">
+              <p class = "step-title">STEP 3</p>
+              <p class = "step-detail">予約可否のご連絡</p>
+            </div>
+            <div class = "step-wrapper">
+              <p class = "step-title">STEP 4</p>
+              <p class = "step-detail">お支払い</p>
+            </div>
+            <div class = "step-wrapper">
+              <p class = "step-title">STEP 5</p>
+              <p class = "step-detail">カウンセリング</p>
+            </div>
+          </div>
         </p>
       </div>
       <div class = "time-wrapper">
@@ -167,13 +190,26 @@ header('X-FRAME-OPTIONS: DENY');
               以下のボタンをクリックし、必要事項を記入して頂ければ、
               お支払いが完了します。
 
+              <div class = "paypal-first-wrapper">
+                <p class = "payment-subtitle">一般の方はこちらから</p>
+                <!-- paypalver.3 -->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-button-container">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="6BTQQFUJDW9PC">
+                <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
+              <div class = "paypal-wrapper">
+                <p class = "payment-subtitle">学生の方の初回カウンセリングはこちらから</p>
               <!-- paypalver.3 -->
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-button-container">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="6BTQQFUJDW9PC">
-              <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
-              <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
-              </form>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-button-container">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="6BTQQFUJDW9PC">
+                <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
 
             </p>
           </div>
@@ -192,6 +228,7 @@ header('X-FRAME-OPTIONS: DENY');
             </p>
           </div>
       </div>
+      <!--
       <div class = "time-wrapper">
         <p class = "time-subtitle">ダミー：</p>
         <p class = "time-detail">
@@ -199,6 +236,7 @@ header('X-FRAME-OPTIONS: DENY');
           文章を追加した場合の一例を表示しています。
         </p>
       </div>
+    -->
     </div>
   </section>
 
@@ -206,11 +244,13 @@ header('X-FRAME-OPTIONS: DENY');
     <a href="https://lin.ee/tY5APzc" class = "line-wrapper">
       <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class = "line-link">
     </a>
+    <!--
     <div class = "mail-wrapper">
       <div class = "mail-image">
       </div>
       <a href="form.php" class = "mail-action">メール予約</a>
     </div>
+  -->
   </footer>
 </body>
 </html>
