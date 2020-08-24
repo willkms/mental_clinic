@@ -35,11 +35,10 @@ header('X-FRAME-OPTIONS: DENY');
       </p>
       <div class = "remark-wrapper">
         <p class = "remark">
-          新規開設キャンペーン<br>
           ご新規様初回20分無料カウンセリング実施中!!
         </p>
         <p class = "date">
-          [ 2020.07.14 ]
+          [ 2020.08.24 ]
         </p>
       </div>
     </div>
@@ -203,12 +202,12 @@ header('X-FRAME-OPTIONS: DENY');
               <div class = "paypal-wrapper">
                 <p class = "payment-subtitle">学生の方の初回カウンセリングはこちらから</p>
               <!-- paypalver.3 -->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-button-container">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="6BTQQFUJDW9PC">
-                <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
-                <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
-                </form>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-button-container">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="PBTGCQXSMURVL">
+              <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+              <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+              </form>
               </div>
 
             </p>
