@@ -35,7 +35,8 @@ header('X-FRAME-OPTIONS: DENY');
       </p>
       <div class = "remark-wrapper">
         <p class = "remark">
-          ご新規様初回20分無料カウンセリング実施中!!
+          ご新規様限定<br>
+          初回20分無料カウンセリング実施中!!
         </p>
         <p class = "date">
           [ 2020.08.24 ]
@@ -47,7 +48,7 @@ header('X-FRAME-OPTIONS: DENY');
 
   <section class = "about">
     <div class = "about-wrapper">
-      <h2 class = "section-title-first">クリニックKの紹介</h2>
+      <h2 class = "section-title-first">クリニックの紹介</h2>
       <div class = "about-contents-wrapper">
         <div class = "about-first-image">
         </div>
@@ -55,7 +56,7 @@ header('X-FRAME-OPTIONS: DENY');
           あなたの心の声を聴かせてください
         </h3>
         <p class = "about-first-detail">
-          メンタルクリニックKでは中高生以上を対象に幅広い年齢層の方に対し心理療法を用いたカウンセリングを行っております。
+          メンタルクリニックKでは中高生以上から働く世代、子育て世代までを対象に幅広い年齢層の方に対し心理療法を用いたカウンセリングを行っております。
           カウンセリングはクライアント様とカウンセラーとの相性や信頼関係が大事と考え、<span class = "yellow-underline">初回の20分カウンセリングは無料</span>とさせていただいております。
           時間の都合上、主な症状等を聴くだけに留まりますが、お気軽にお試しいただければと思います。
 
@@ -118,8 +119,8 @@ header('X-FRAME-OPTIONS: DENY');
         <p class = "about-third-detail">
           ケアストレスカウンセラー<br><br>
           盛岡を中心に岩手で学習塾や学校の教育機関で10年以上に渡り教育業に従事。<br>
-          学校長やスーパーバイザーとしての立場で複数の親御さん(20代〜50代)、<br>
-          生徒(中学生〜大学生)の相談に乗ること延べ数100件。<br>
+          学校長やスーパーバイザーとしての立場で複数の親御さん、<br>
+          生徒さんの相談に乗ること延べ数100件。<br>
           日々の生き辛さを少しでも楽にしてあげられればと思いクリニックを開設。<br>
           クライアント様の立場に立ち、しっかりと寄り添うカウンセリングを得意とする。
         </p>
@@ -134,7 +135,8 @@ header('X-FRAME-OPTIONS: DENY');
         <p class = "time-subtitle">受付時間：</p>
         <p class = "time-detail">
           12:00〜21:00<br>
-          最終カウンセリング開始時間は20:00となっております。
+          最終カウンセリング開始時間は20:00となっております。<br>
+          初回20分無料カウンセリングの最終開始時間は20:30となっております。
         </p>
       </div>
       <div class = "time-wrapper">
@@ -143,6 +145,8 @@ header('X-FRAME-OPTIONS: DENY');
           LINE通話にて承っております。<br>
           カウンセリングは完全予約制となっております。<br>
           LINE友達追加後、必要事項をご記入の上ご予約下さい。<br><br>
+          当日のカウンセリングにつきましては予約状況によってお受けできない場合がございますので、<br>
+          当日の他に翌日以降の希望日時も記入いただくようお願い致します。
           <!-- カウンセリングまでの流れ：LINE友達追加→必要事項記入→予約可否のご連絡→お支払い→カウンセリング -->
           <div class = "flow-wrapper">
             <p class = "flow-title">カウンセリングまでの流れ</p>
@@ -172,9 +176,10 @@ header('X-FRAME-OPTIONS: DENY');
       <div class = "time-wrapper">
         <p class = "time-subtitle">料金：</p>
         <p class = "time-detail">
-          ¥6,000/50分<br>
+          ¥6,000/50分<br><br>
           <span class = "yellow-underline">学割あります！</span><br>
-          学生さんは初めてのカウンセリングに限り　¥3,000/50分 でご利用できます。
+          学生さんは初めてのカウンセリングに限り　¥3,000/50分 でご利用できます。<br>
+          学生証の添付を忘れずにお願いします。
         </p>
       </div>
       <div class = "time-wrapper">
@@ -218,15 +223,16 @@ header('X-FRAME-OPTIONS: DENY');
             <p class = "payment-detail">
               お振込み先は以下の通りです。<br><br>
               ゆうちょ銀行<br>
-              店名（店番）　〇二九（ゼロニキュウ）店<br>
-              預金種目　当座<br>
-              口座番号　１４２６８４<br>
-              口座名称（漢字）　セレーナメンタルクリニック<br>
-              口座名称（カナ）　セレーナメンタルクリニック<br>
-              口座記号番号　00260-5-142684<br>
+              店名（店番）　八三八（ハチサンハチ）店<br>
+              預金種目　普通<br>
+              口座番号　１２９９６７９<br>
+              口座名称（漢字）　加藤千尋<br>
+              口座名称（カナ）　カトウチヒロ<br>
+              口座記号番号　18380-12996791<br>
             </p>
           </div>
       </div>
+      <small>Copyright (c) メンタルクリニックK All Rights Reserved.</small>
       <!--
       <div class = "time-wrapper">
         <p class = "time-subtitle">ダミー：</p>
@@ -243,6 +249,8 @@ header('X-FRAME-OPTIONS: DENY');
     <a href="https://lin.ee/tY5APzc" class = "line-wrapper">
       <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class = "line-link">
     </a>
+    不定期にクーポンが配信される予定です。友達登録だけでも是非！
+
     <!--
     <div class = "mail-wrapper">
       <div class = "mail-image">
