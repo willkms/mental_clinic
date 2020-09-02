@@ -360,7 +360,7 @@ input, select {
 }
 
 .time-wide-wrapper{
-  padding-bottom: 10rem;
+  padding-bottom: 0;
   margin-left: 5%;
   margin-right: 5%;
   overflow: hidden;
@@ -480,7 +480,7 @@ input, select {
   height: auto;
   padding: 0 1rem 2rem 1rem;
   border: 2px dotted #98DBC6;
-  margin-bottom: 2rem;
+  margin-bottom: 11.5rem;
 }
 
 .payment-title{
@@ -547,14 +547,40 @@ footer{
   overflow: hidden;
 }
 
-.line-wrapper{
+/* LINEとメールフォーム版のLINE */
+/* .line-wrapper{
   float: left;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: 2rem;
 }
 
 .line-link{
   height: 32px;
+} */
+
+.line-wide-wrapper{
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.line-title{
+  padding-bottom: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #eff9f6;
+}
+
+.line-wrapper{
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
+  /* padding-left: 2rem; */
+}
+
+.line-link{
+  height: 40px;
 }
 
 .mail-wrapper{
@@ -589,6 +615,15 @@ footer{
   margin-left: 0.5rem;
   text-align: center;
   text-decoration:none;
+  color: white;
+}
+
+.Copyright{
+  padding: 1rem 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:400;
+  font-size: 12px;
+  line-height: 1.5;
   color: white;
 }
 
@@ -860,13 +895,82 @@ footer{
     color: #888888;
   }
 
-  .payment-wrapper{
+  /* 口座振り込みありパターン */
+  /* .payment-wrapper{
     float: left;
     width: 40%;
     height: auto;
     padding: 0 1rem 1rem 1rem;
     border: 2px dotted #98DBC6;
     margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    .payment-title{
+      text-align: center;
+      padding-top: 1rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight:700;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #888888;
+    }
+
+    .payment-detail{
+      padding-top: 1rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight:400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #888888;
+    }
+
+    .paypal-first-wrapper{
+      width: 80%;
+      height: auto;
+      padding: 1rem 0;
+      border-top: 2px dotted #98DBC6;
+      border-bottom: 2px dotted #98DBC6;
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .paypal-wrapper{
+      width: 80%;
+      height: auto;
+      padding: 1rem 0;
+      border-bottom: 2px dotted #98DBC6;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .payment-subtitle{
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight:700;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #888888;
+    }
+
+    #paypal-button-container{
+      width: 50%;
+      height: auto;
+      padding-top: 1rem;
+      padding-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  } */
+
+  .payment-wrapper{
+    width: 90%;
+    height: auto;
+    padding: 0 1rem 1rem 1rem;
+    border: 2px dotted #98DBC6;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1rem;
     overflow: hidden;
   }
@@ -891,23 +995,27 @@ footer{
   }
 
   .paypal-first-wrapper{
-    width: 80%;
+    float: left;
+    width: 45%;
     height: auto;
     padding: 1rem 0;
     border-top: 2px dotted #98DBC6;
     border-bottom: 2px dotted #98DBC6;
     margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 
   .paypal-wrapper{
-    width: 80%;
+    float: left;
+    width: 45%;
     height: auto;
     padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
     border-bottom: 2px dotted #98DBC6;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 
   .payment-subtitle{
@@ -926,6 +1034,7 @@ footer{
     padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   footer{
@@ -936,10 +1045,25 @@ footer{
     overflow: hidden;
   }
 
+  .line-wide-wrapper{
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+  }
+
+  .line-title{
+    padding-bottom: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eff9f6;
+  }
+
   .line-wrapper{
-    float: left;
+    /* float: left;
     padding-top: 3rem;
-    padding-left: 20vw;
+    padding-bottom: 3rem;
+    padding-left: 20vw; */
   }
 
   .line-link{
@@ -974,6 +1098,16 @@ footer{
     text-align: center;
     text-decoration:none;
     color: white;
+  }
+
+  .Copyright{
+    padding: 1rem 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
   }
 
 }
@@ -1189,7 +1323,8 @@ footer{
     color: #888888;
   }
 
-  .payment-wrapper{
+  /* 口座振り込みありパターン */
+  /* .payment-wrapper{
     float: left;
     width: 40%;
     height: auto;
@@ -1258,12 +1393,100 @@ footer{
     padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+  } */
+
+  .payment-wrapper{
+    width: 90%;
+    height: auto;
+    padding: 0 1rem 1rem 1rem;
+    border: 2px dotted #98DBC6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .payment-title{
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .payment-detail{
+    padding-top: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .paypal-first-wrapper{
+    float: left;
+    width: 45%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .paypal-wrapper{
+    float: left;
+    width: 45%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .payment-subtitle{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  #paypal-button-container{
+    width: 50%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .line-wide-wrapper{
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+  }
+
+  .line-title{
+    padding-bottom: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eff9f6;
   }
 
   .line-wrapper{
-    float: left;
+    /* float: left;
     padding-top: 3rem;
-    padding-left: 20vw;
+    padding-bottom: 3rem;
+    padding-left: 20vw; */
   }
 
   .line-link{
@@ -1299,6 +1522,16 @@ footer{
     text-decoration:none;
     color: white;
     font-size: 20px;
+  }
+
+  .Copyright{
+    padding: 1rem 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
   }
 
 }
@@ -1613,7 +1846,8 @@ footer{
     color: #888888;
   }
 
-  .payment-wrapper{
+  /* 口座振り込みありパターン */
+  /* .payment-wrapper{
     float: left;
     width: 40%;
     height: auto;
@@ -1682,12 +1916,100 @@ footer{
     padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+  } */
+
+  .payment-wrapper{
+    width: 90%;
+    height: auto;
+    padding: 0 1rem 2rem 1rem;
+    border: 2px dotted #98DBC6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .payment-title{
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .payment-detail{
+    padding-top: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  .paypal-first-wrapper{
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .paypal-wrapper{
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 2px dotted #98DBC6;
+    border-bottom: 2px dotted #98DBC6;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .payment-subtitle{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888888;
+  }
+
+  #paypal-button-container{
+    width: 50%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .line-wide-wrapper{
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+  }
+
+  .line-title{
+    padding-bottom: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eff9f6;
   }
 
   .line-wrapper{
-    float: left;
+    /* float: left;
     padding-top: 3rem;
-    padding-left: 20vw;
+    padding-bottom: 3rem;
+    padding-left: 20vw; */
   }
 
   .line-link{
@@ -1723,6 +2045,16 @@ footer{
     text-decoration:none;
     color: white;
     font-size: 18px;
+  }
+
+  .Copyright{
+    padding: 1rem 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
   }
 
 }

@@ -217,7 +217,7 @@ header('X-FRAME-OPTIONS: DENY');
 
             </p>
           </div>
-
+<!--
           <div class = "payment-wrapper">
             <p class = "payment-title">口座振り込みでお支払いの場合</p>
             <p class = "payment-detail">
@@ -231,8 +231,8 @@ header('X-FRAME-OPTIONS: DENY');
               口座記号番号　18380-12996791<br>
             </p>
           </div>
+           -->
       </div>
-      <small>Copyright (c) メンタルクリニックK All Rights Reserved.</small>
       <!--
       <div class = "time-wrapper">
         <p class = "time-subtitle">ダミー：</p>
@@ -246,10 +246,13 @@ header('X-FRAME-OPTIONS: DENY');
   </section>
 
   <footer>
-    <a href="https://lin.ee/tY5APzc" class = "line-wrapper">
-      <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class = "line-link">
-    </a>
-    不定期にクーポンが配信される予定です。友達登録だけでも是非！
+    <div class = "line-wide-wrapper">
+      <!-- <p class = "line-title">不定期にクーポンが配信される予定です。友達登録だけでも是非！</p> -->
+      <p class = "line-title">悩んでるあなたは、ぜひ友達登録！</p>
+      <a href="https://lin.ee/tY5APzc" class = "line-wrapper">
+        <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class = "line-link">
+      </a>
+    </div>
 
     <!--
     <div class = "mail-wrapper">
@@ -258,6 +261,7 @@ header('X-FRAME-OPTIONS: DENY');
       <a href="form.php" class = "mail-action">メール予約</a>
     </div>
   -->
+    <p class = "Copyright">Copyright (c) メンタルクリニックK All Rights Reserved.</p>
   </footer>
 </body>
 </html>
