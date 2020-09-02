@@ -233,15 +233,55 @@ header('X-FRAME-OPTIONS: DENY');
           </div>
            -->
       </div>
-      <!--
+
       <div class = "time-wrapper">
-        <p class = "time-subtitle">ダミー：</p>
+        <p class = "time-subtitle">予約状況：</p>
         <p class = "time-detail">
-          これはダミーの文章です。<br>
-          文章を追加した場合の一例を表示しています。
+          現在の予約状況は以下の通りです。
         </p>
+        <table class = "time-table">
+          <tr>
+            <th class = "blank"></th><th class = "time-table-header">50分</td><th class = "time-table-header">初回限定20分</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">12:00～</th><td class = "time-table-cell">○</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">13:00～</th><td class = "time-table-cell">-</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">13:30～</th><td class = "time-table-cell">○</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">14:30～</th><td class = "time-table-cell">-</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">15:00～</th><td class = "time-table-cell">○</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">16:00～</th><td class = "time-table-cell">-</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">16:30～</th><td class = "time-table-cell">○</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">17:30～</th><td class = "time-table-cell">-</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">18:00～</th><td class = "time-table-cell">×</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">19:00～</th><td class = "time-table-cell">-</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">19:30～</th><td class = "time-table-cell">×</td><td class = "time-table-cell">○</td>
+          </tr>
+          <tr>
+            <th class = "time-table-header">20:30～</th><td class = "time-table-cell">-</td><td class = "time-table-cell">○</td>
+          </tr>
+        </table>
       </div>
-    -->
+
     </div>
   </section>
 
